@@ -11,6 +11,7 @@
 <body>
 
 <section class="form">
+	<label for="a">Age of adoption</label> <input type="text" name="a" id="a" /><br />
 	<label for="cost1">Cost1</label> <input type="text" name="cost1" id="cost1" /><br />
 	<label for="cost2">Cost2</label> <input type="text" name="cost2" id="cost2" /><br />
 	<label for="cost3">Cost3</label> <input type="text" name="cost3" id="cost3" /><br />
@@ -34,7 +35,8 @@
 			for (var i=0; i<the_user_inputs.length; i++) {
 
 			}*/
-			the_table(	$('input#cost1').val(),
+			the_table(	$('input#a').val(),
+						$('input#cost1').val(),
 						$('input#cost2').val(),
 						$('input#cost3').val(),
 						$('input#cost4').val(),
