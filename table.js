@@ -4,6 +4,8 @@ var cdnb, nr, yield; // outcomes
 
 function the_table() {
 	d3.tsv("yield-rates.tsv", function(data) {
-		console.log(data[0]);
+		for (i=0; i<data.length; i++) {
+			console.log(data[i]);
+		}
 	});
 }
