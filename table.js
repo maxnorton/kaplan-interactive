@@ -37,6 +37,15 @@ function the_table(cost1, cost2, cost3, cost4, pc, price, yield1, yield2, yield3
 			24 : yield5*data[24]['25y03']/100,
 			25 : yield5*data[25]['25y03']/100
 		};
-	console.log(yields);
+		console.log(yields);
+
+		var the_table_html = '<table><thead><th>Age</th><th>Yield</th></thead><tbody>';
+
+		for (var k=0; k<26; k++) {
+			the_table_html += '<tr><td>' + k + '</td><td>' + yields[k] + '</td></tr>';
+		}
+
+		the_table_html += '</tbody></table>';
+		$('.results').html(the_table_html);
 	});
 };
