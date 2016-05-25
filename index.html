@@ -11,17 +11,17 @@
 <body>
 
 <section class="form">
-	<label for="cost1">Cost1</label> <input type="text" name="cost1" /><br />
-	<label for="cost2">Cost2</label> <input type="text" name="cost2" /><br />
-	<label for="cost3">Cost3</label> <input type="text" name="cost3" /><br />
-	<label for="cost4">Cost4</label> <input type="text" name="cost4" /><br />
-	<label for="pc">Practice cost</label> <input type="text" name="pc" /><br />
-	<label for="price">Price</label> <input type="text" name="price" /><br />
-	<label for="yield1">Yield1</label> <input type="text" name="yield1" /><br />
-	<label for="yield2">Yield2</label> <input type="text" name="yield2" /><br />
-	<label for="yield3">Yield3</label> <input type="text" name="yield3" /><br />
-	<label for="yield4">Yield4</label> <input type="text" name="yield4" /><br />
-	<label for="yield5">Yield5</label> <input type="text" name="yield5" /><br />
+	<label for="cost1">Cost1</label> <input type="text" name="cost1" id="cost1" /><br />
+	<label for="cost2">Cost2</label> <input type="text" name="cost2" id="cost2" /><br />
+	<label for="cost3">Cost3</label> <input type="text" name="cost3" id="cost3" /><br />
+	<label for="cost4">Cost4</label> <input type="text" name="cost4" id="cost4" /><br />
+	<label for="pc">Practice cost</label> <input type="text" name="pc" id="pc" /><br />
+	<label for="price">Price</label> <input type="text" name="price" id="price" /><br />
+	<label for="yield1">Yield1</label> <input type="text" name="yield1" id="yield1" /><br />
+	<label for="yield2">Yield2</label> <input type="text" name="yield2" id="yield2" /><br />
+	<label for="yield3">Yield3</label> <input type="text" name="yield3" id="yield3" /><br />
+	<label for="yield4">Yield4</label> <input type="text" name="yield4" id="yield4" /><br />
+	<label for="yield5">Yield5</label> <input type="text" name="yield5" id="yield5" /><br />
 	<button id="submit">Submit</button>
 </section>
 
@@ -32,17 +32,17 @@
 			for (var i=0; i<the_user_inputs.length; i++) {
 
 			}*/
-			the_table(	$('input.cost1'),
-						$('input.cost2'),
-						$('input.cost3'),
-						$('input.cost4'),
-						$('input.pc'),
-						$('input.price'),
-						$('input.yield1'),
-						$('input.yield2'),
-						$('input.yield3'),
-						$('input.yield4'),
-						$('input.yield5')
+			the_table(	$('input#cost1').val(),
+						$('input#cost2').val(),
+						$('input#cost3').val(),
+						$('input#cost4').val(),
+						$('input#pc').val(),
+						$('input#price').val(),
+						$('input#yield1').val(),
+						$('input#yield2').val(),
+						$('input#yield3').val(),
+						$('input#yield4').val(),
+						$('input#yield5').val()
 				);
 		});
 	});
