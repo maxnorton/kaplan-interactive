@@ -1,7 +1,7 @@
 var t, a, eff, discount; // indices
 var cost1, cost2, cost3, cost4, pc, price, yield1, yield2, yield3, yield4, yield5; // user-set parameters
-var cdnb, dnr, nr, yield; // outcomes
-var yields, costs, pcFtnOfT = new Array(); // collation arrays
+var cdnb, dnr, nr, yields = new Array(); // outcomes
+var costs, pcFtnOfT = new Array(); // collation arrays
 
 function the_table(a, discount, cost1, cost2, cost3, cost4, pc, price, yield1, yield2, yield3, yield4, yield5) {
 	d3.tsv("yield-rates.tsv", function(data) {
@@ -129,10 +129,16 @@ function the_table(a, discount, cost1, cost2, cost3, cost4, pc, price, yield1, y
 			nr[25]*(1/(1+discount/100))
 		];
 
-		var the_table_html = '<table><thead><th>Age</th><th>Yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th></thead><tbody>';
+		console.log(dnr[0]);
+		cdnb = [ dnr[0] ];
+		for (var m=1; m<26; m++) {
+			cdnb[m] = dnr[m] + cdnb[m-1];
+		};
+
+		var the_table_html = '<table><thead><th>Age</th><th>Yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNB</th></thead><tbody>';
 
 		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td><td>' + dnr[k] + '</td></tr>';
+			the_table_html += '<tr><td>' + k + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td><td>' + dnr[k] + '</td><td>' + cdnb[k] + '</td></tr>';
 		}
 
 		the_table_html += '</tbody></table>';
