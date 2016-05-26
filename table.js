@@ -1,6 +1,6 @@
 var t, a, eff, discount; // indices
 var cost1, cost2, cost3, cost4, pc, price, yield1, yield2, yield3, yield4, yield5; // user-set parameters
-var cdnb, nr, yield; // outcomes
+var cdnb, dnr, nr, yield; // outcomes
 var yields, costs, pcFtnOfT = new Array(); // collation arrays
 
 function the_table(a, discount, cost1, cost2, cost3, cost4, pc, price, yield1, yield2, yield3, yield4, yield5) {
@@ -100,10 +100,39 @@ function the_table(a, discount, cost1, cost2, cost3, cost4, pc, price, yield1, y
 			price*yields[25]-costs[25]-pcFtnOfT[25]
 		];
 
-		var the_table_html = '<table><thead><th>Age</th><th>Yield</th><th>Cultural costs</th><th>Practice costs</th><th>Net returns</th></thead><tbody>';
+		dnr = [
+			nr[0]*(1/(1+discount/100)),
+			nr[1]*(1/(1+discount/100)),
+			nr[2]*(1/(1+discount/100)),
+			nr[3]*(1/(1+discount/100)),
+			nr[4]*(1/(1+discount/100)),
+			nr[5]*(1/(1+discount/100)),
+			nr[6]*(1/(1+discount/100)),
+			nr[7]*(1/(1+discount/100)),
+			nr[8]*(1/(1+discount/100)),
+			nr[9]*(1/(1+discount/100)),
+			nr[10]*(1/(1+discount/100)),
+			nr[11]*(1/(1+discount/100)),
+			nr[12]*(1/(1+discount/100)),
+			nr[13]*(1/(1+discount/100)),
+			nr[14]*(1/(1+discount/100)),
+			nr[15]*(1/(1+discount/100)),
+			nr[16]*(1/(1+discount/100)),
+			nr[17]*(1/(1+discount/100)),
+			nr[18]*(1/(1+discount/100)),
+			nr[19]*(1/(1+discount/100)),
+			nr[20]*(1/(1+discount/100)),
+			nr[21]*(1/(1+discount/100)),
+			nr[22]*(1/(1+discount/100)),
+			nr[23]*(1/(1+discount/100)),
+			nr[24]*(1/(1+discount/100)),
+			nr[25]*(1/(1+discount/100))
+		];
+
+		var the_table_html = '<table><thead><th>Age</th><th>Yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th></thead><tbody>';
 
 		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td></tr>';
+			the_table_html += '<tr><td>' + k + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td><td>' + dnr[k] + '</td></tr>';
 		}
 
 		the_table_html += '</tbody></table>';
