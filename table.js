@@ -9,6 +9,7 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		console.log(efficacy + 'y' + age);
 		yields = [
 			yield0*data[0][efficacy + 'y' + age]/100,
+			yield0*data[1][efficacy + 'y' + age]/100,
 			yield1*data[2][efficacy + 'y' + age]/100,
 			yield2*data[3][efficacy + 'y' + age]/100,
 			yield3*data[4][efficacy + 'y' + age]/100,
