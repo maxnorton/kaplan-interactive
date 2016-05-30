@@ -37,16 +37,21 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			yield4,
 			yield4		
 		];
+		console.log(healthyYields);
 
 		untreatedYields = [];
 		for (var i in healthyYields) {
 			untreatedYields[i] = healthyYields[i]*data[i]['no_action']/100;
+			console.log(data[i]['no_action']/100);
 		}
+		console.log(untreatedYields);
 
 		var yields = [];
 		for (var i in healthyYields) {
 			yields[i] = healthyYields[i]*data[i][selectCol]/100;
+			console.log(data[i][selectCol]/100);
 		};
+		console.log(yields);
 
 		costs = [
 			cost0,
