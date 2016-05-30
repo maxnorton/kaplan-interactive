@@ -165,7 +165,7 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			isProfitable[n] = ( dnr[n] > 0 ) ? 1 : 0;
 		}; // in what case would the cumDNR slope up but never climb over zero? confused.
 
-		var the_table_html = '<table><thead><th>Age</th>>th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th></thead><tbody>';
+		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th></thead><tbody>';
 
 		for (var k=0; k<26; k++) {
 			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td><td>' + dnr[k] + '</td><td>' + cdnr[k] + '</td></tr>';
