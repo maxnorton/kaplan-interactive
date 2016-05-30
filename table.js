@@ -7,33 +7,35 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 	d3.tsv("yield-rates.tsv", function(data) {
 
 		console.log(efficacy + 'y' + age);
+		var selectCol = (efficacy==0) ? 'no_action' : efficacy + 'y' + age;
+		console.log(selectCol);
 		yields = [
-			yield0*data[0][efficacy + 'y' + age]/100,
-			yield0*data[1][efficacy + 'y' + age]/100,
-			yield1*data[2][efficacy + 'y' + age]/100,
-			yield2*data[3][efficacy + 'y' + age]/100,
-			yield3*data[4][efficacy + 'y' + age]/100,
-			yield4*data[5][efficacy + 'y' + age]/100,
-			yield4*data[6][efficacy + 'y' + age]/100,
-			yield4*data[7][efficacy + 'y' + age]/100,
-			yield4*data[8][efficacy + 'y' + age]/100,
-			yield4*data[9][efficacy + 'y' + age]/100,
-			yield4*data[10][efficacy + 'y' + age]/100,
-			yield4*data[11][efficacy + 'y' + age]/100,
-			yield4*data[12][efficacy + 'y' + age]/100,
-			yield4*data[13][efficacy + 'y' + age]/100,
-			yield4*data[14][efficacy + 'y' + age]/100,
-			yield4*data[15][efficacy + 'y' + age]/100,
-			yield4*data[16][efficacy + 'y' + age]/100,
-			yield4*data[17][efficacy + 'y' + age]/100,
-			yield4*data[18][efficacy + 'y' + age]/100,
-			yield4*data[19][efficacy + 'y' + age]/100,
-			yield4*data[20][efficacy + 'y' + age]/100,
-			yield4*data[21][efficacy + 'y' + age]/100,
-			yield4*data[22][efficacy + 'y' + age]/100,
-			yield4*data[23][efficacy + 'y' + age]/100,
-			yield4*data[24][efficacy + 'y' + age]/100,
-			yield4*data[25][efficacy + 'y' + age]/100
+			yield0*data[0][selectCol]/100,
+			yield0*data[1][selectCol]/100,
+			yield1*data[2][selectCol]/100,
+			yield2*data[3][selectCol]/100,
+			yield3*data[4][selectCol]/100,
+			yield4*data[5][selectCol]/100,
+			yield4*data[6][selectCol]/100,
+			yield4*data[7][selectCol]/100,
+			yield4*data[8][selectCol]/100,
+			yield4*data[9][selectCol]/100,
+			yield4*data[10][selectCol]/100,
+			yield4*data[11][selectCol]/100,
+			yield4*data[12][selectCol]/100,
+			yield4*data[13][selectCol]/100,
+			yield4*data[14][selectCol]/100,
+			yield4*data[15][selectCol]/100,
+			yield4*data[16][selectCol]/100,
+			yield4*data[17][selectCol]/100,
+			yield4*data[18][selectCol]/100,
+			yield4*data[19][selectCol]/100,
+			yield4*data[20][selectCol]/100,
+			yield4*data[21][selectCol]/100,
+			yield4*data[22][selectCol]/100,
+			yield4*data[23][selectCol]/100,
+			yield4*data[24][selectCol]/100,
+			yield4*data[25][selectCol]/100
 		];
 
 		costs = [
