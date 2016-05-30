@@ -1,6 +1,6 @@
 var t, a, eff, discount; // indices
 var cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4; // user-set parameters
-var cdnb, dnr, nr, yields = new Array(); // outcomes
+var cdnr, dnr, nr, yields = new Array(); // outcomes
 var costs, pcFtnOfT, isProfitable = new Array(); // collation arrays
 
 function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
@@ -9,34 +9,44 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		console.log(efficacy + 'y' + age);
 		var selectCol = (efficacy==0) ? 'no_action' : efficacy + 'y' + age;
 		console.log(selectCol);
-		yields = [
-			yield0*data[0][selectCol]/100,
-			yield0*data[1][selectCol]/100,
-			yield1*data[2][selectCol]/100,
-			yield2*data[3][selectCol]/100,
-			yield3*data[4][selectCol]/100,
-			yield4*data[5][selectCol]/100,
-			yield4*data[6][selectCol]/100,
-			yield4*data[7][selectCol]/100,
-			yield4*data[8][selectCol]/100,
-			yield4*data[9][selectCol]/100,
-			yield4*data[10][selectCol]/100,
-			yield4*data[11][selectCol]/100,
-			yield4*data[12][selectCol]/100,
-			yield4*data[13][selectCol]/100,
-			yield4*data[14][selectCol]/100,
-			yield4*data[15][selectCol]/100,
-			yield4*data[16][selectCol]/100,
-			yield4*data[17][selectCol]/100,
-			yield4*data[18][selectCol]/100,
-			yield4*data[19][selectCol]/100,
-			yield4*data[20][selectCol]/100,
-			yield4*data[21][selectCol]/100,
-			yield4*data[22][selectCol]/100,
-			yield4*data[23][selectCol]/100,
-			yield4*data[24][selectCol]/100,
-			yield4*data[25][selectCol]/100
+		healthyYields = [
+			yield0,
+			yield0,
+			yield1,
+			yield2,
+			yield3,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4,
+			yield4		
 		];
+
+		untreatedYields = [];
+		for (var i in healthyYields) {
+			untreatedYields[i] = healthyYields[i]*data[i]['no_action']/100;
+		}
+
+		var yields = [];
+		for (var i in healthyYields) {
+			yields[i] = healthyYields[i]*data[i][selectCol]/100;
+		};
 
 		costs = [
 			cost0,
@@ -140,20 +150,25 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			nr[25]*(1/(1+discount/100))
 		];
 
-		cdnb = [ dnr[0] ];
+		cdnr = [ dnr[0] ];
 		for (var m=1; m<26; m++) {
-			cdnb[m] = dnr[m] + cdnb[m-1];
+			cdnr[m] = dnr[m] + cdnr[m-1];
 		};
+
+		/*var acdnb = [];
+		for (var i in dnr) {
+			acdnb = 
+		}*/
 
 		isProfitable = [ null ];
 		for (var n=1; n<26; n++) {
 			isProfitable[n] = ( dnr[n] > 0 ) ? 1 : 0;
 		}; // in what case would the cumDNR slope up but never climb over zero? confused.
 
-		var the_table_html = '<table><thead><th>Age</th><th>Yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNB</th></thead><tbody>';
+		var the_table_html = '<table><thead><th>Age</th>>th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th></thead><tbody>';
 
 		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td><td>' + dnr[k] + '</td><td>' + cdnb[k] + '</td></tr>';
+			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td><td>' + dnr[k] + '</td><td>' + cdnr[k] + '</td></tr>';
 		}
 
 		the_table_html += '</tbody></table>';
