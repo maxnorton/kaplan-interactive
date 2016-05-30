@@ -1,75 +1,83 @@
 var t, a, eff, discount; // indices
-var cost1, cost2, cost3, cost4, pc, price, yield1, yield2, yield3, yield4, yield5; // user-set parameters
+var cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4; // user-set parameters
 var cdnb, dnr, nr, yields = new Array(); // outcomes
-var costs, pcFtnOfT = new Array(); // collation arrays
+var costs, pcFtnOfT, isProfitable = new Array(); // collation arrays
 
-function the_table(a, discount, cost1, cost2, cost3, cost4, pc, price, yield1, yield2, yield3, yield4, yield5) {
+function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
 	d3.tsv("yield-rates.tsv", function(data) {
 
+		console.log(efficacy + 'y' + age);
 		yields = [
-			yield1*data[0]['25y03']/100,
-			yield1*data[1]['25y03']/100,
-			yield2*data[2]['25y03']/100,
-			yield3*data[3]['25y03']/100,
-			yield4*data[4]['25y03']/100,
-			yield5*data[5]['25y03']/100,
-			yield5*data[6]['25y03']/100,
-			yield5*data[7]['25y03']/100,
-			yield5*data[8]['25y03']/100,
-			yield5*data[9]['25y03']/100,
-			yield5*data[10]['25y03']/100,
-			yield5*data[11]['25y03']/100,
-			yield5*data[12]['25y03']/100,
-			yield5*data[13]['25y03']/100,
-			yield5*data[14]['25y03']/100,
-			yield5*data[15]['25y03']/100,
-			yield5*data[16]['25y03']/100,
-			yield5*data[17]['25y03']/100,
-			yield5*data[18]['25y03']/100,
-			yield5*data[19]['25y03']/100,
-			yield5*data[20]['25y03']/100,
-			yield5*data[21]['25y03']/100,
-			yield5*data[22]['25y03']/100,
-			yield5*data[23]['25y03']/100,
-			yield5*data[24]['25y03']/100,
-			yield5*data[25]['25y03']/100
+			yield0*data[0][efficacy + 'y' + age]/100,
+			yield1*data[2][efficacy + 'y' + age]/100,
+			yield2*data[3][efficacy + 'y' + age]/100,
+			yield3*data[4][efficacy + 'y' + age]/100,
+			yield4*data[5][efficacy + 'y' + age]/100,
+			yield4*data[6][efficacy + 'y' + age]/100,
+			yield4*data[7][efficacy + 'y' + age]/100,
+			yield4*data[8][efficacy + 'y' + age]/100,
+			yield4*data[9][efficacy + 'y' + age]/100,
+			yield4*data[10][efficacy + 'y' + age]/100,
+			yield4*data[11][efficacy + 'y' + age]/100,
+			yield4*data[12][efficacy + 'y' + age]/100,
+			yield4*data[13][efficacy + 'y' + age]/100,
+			yield4*data[14][efficacy + 'y' + age]/100,
+			yield4*data[15][efficacy + 'y' + age]/100,
+			yield4*data[16][efficacy + 'y' + age]/100,
+			yield4*data[17][efficacy + 'y' + age]/100,
+			yield4*data[18][efficacy + 'y' + age]/100,
+			yield4*data[19][efficacy + 'y' + age]/100,
+			yield4*data[20][efficacy + 'y' + age]/100,
+			yield4*data[21][efficacy + 'y' + age]/100,
+			yield4*data[22][efficacy + 'y' + age]/100,
+			yield4*data[23][efficacy + 'y' + age]/100,
+			yield4*data[24][efficacy + 'y' + age]/100,
+			yield4*data[25][efficacy + 'y' + age]/100
 		];
 
 		costs = [
-			0,
+			cost0,
 			cost1,
 			cost2,
 			cost3,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4,
-			cost4			
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3,
+			cost3			
 		];
 
-		for (var l=0; l<a; l++) {
+		console.log(costs);
+		console.log(price);
+		console.log(yields);
+
+		var pcFtnOfT = [];
+
+		for (var l=0; l<age; l++) {
 			pcFtnOfT[l] = 0;
 		};
-		for (l=a; l<26; l++) {
+		for (l=age; l<26; l++) {
 			pcFtnOfT[l] = pc;
 		};
+
+		console.log(pcFtnOfT);
 
 		nr = [
 			price*yields[0]-costs[0]-pcFtnOfT[0],
@@ -129,11 +137,15 @@ function the_table(a, discount, cost1, cost2, cost3, cost4, pc, price, yield1, y
 			nr[25]*(1/(1+discount/100))
 		];
 
-		console.log(dnr[0]);
 		cdnb = [ dnr[0] ];
 		for (var m=1; m<26; m++) {
 			cdnb[m] = dnr[m] + cdnb[m-1];
 		};
+
+		isProfitable = [ null ];
+		for (var n=1; n<26; n++) {
+			isProfitable[n] = ( dnr[n] > 0 ) ? 1 : 0;
+		}; // in what case would the cumDNR slope up but never climb over zero? confused.
 
 		var the_table_html = '<table><thead><th>Age</th><th>Yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNB</th></thead><tbody>';
 

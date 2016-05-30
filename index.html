@@ -11,19 +11,30 @@
 <body>
 
 <section class="form">
-	<label for="a">Age of adoption</label> <input type="text" name="a" id="a" /><br />
+	<h4 id="a">Age of adoption</h4>
+		<ul>
+			<li><label><input type="radio" name="age" value="3" />Year 3</label></li>
+			<li><label><input type="radio" name="age" value="5" />Year 5</label></li>
+			<li><label><input type="radio" name="age" value="10" />Year 10</label></li>
+		</ul>
+	<h4 id="eff">Anticipated efficacy</h4>
+		<ul>
+			<li><label><input type="radio" name="efficacy" value="25" />25%</label></li>
+			<li><label><input type="radio" name="efficacy" value="50" />50%</label></li>
+			<li><label><input type="radio" name="efficacy" value="75" />75%</label></li>
+		</ul>
 	<label for="discount">Discount rate (%)</label> <input type="text" name="discount" id="discount" /><br />
+	<label for="cost0">Cost0</label> <input type="text" name="cost0" id="cost0" /><br />
 	<label for="cost1">Cost1</label> <input type="text" name="cost1" id="cost1" /><br />
 	<label for="cost2">Cost2</label> <input type="text" name="cost2" id="cost2" /><br />
 	<label for="cost3">Cost3</label> <input type="text" name="cost3" id="cost3" /><br />
-	<label for="cost4">Cost4</label> <input type="text" name="cost4" id="cost4" /><br />
 	<label for="pc">Practice cost</label> <input type="text" name="pc" id="pc" /><br />
 	<label for="price">Price</label> <input type="text" name="price" id="price" /><br />
+	<label for="yield0">Yield0</label> <input type="text" name="yield0" id="yield0" /><br />
 	<label for="yield1">Yield1</label> <input type="text" name="yield1" id="yield1" /><br />
 	<label for="yield2">Yield2</label> <input type="text" name="yield2" id="yield2" /><br />
 	<label for="yield3">Yield3</label> <input type="text" name="yield3" id="yield3" /><br />
 	<label for="yield4">Yield4</label> <input type="text" name="yield4" id="yield4" /><br />
-	<label for="yield5">Yield5</label> <input type="text" name="yield5" id="yield5" /><br />
 	<button id="submit">Submit</button>
 </section>
 
@@ -36,19 +47,20 @@
 			for (var i=0; i<the_user_inputs.length; i++) {
 
 			}*/
-			the_table(	$('input#a').val(),
+			the_table(	$('input[name=age]').val(),
+						$('input[name=efficacy]').val(),
 						$('input#discount').val(),
+						$('input#cost0').val(),
 						$('input#cost1').val(),
 						$('input#cost2').val(),
 						$('input#cost3').val(),
-						$('input#cost4').val(),
 						$('input#pc').val(),
 						$('input#price').val(),
+						$('input#yield0').val(),
 						$('input#yield1').val(),
 						$('input#yield2').val(),
 						$('input#yield3').val(),
-						$('input#yield4').val(),
-						$('input#yield5').val()
+						$('input#yield4').val()
 				);
 		});
 	});
