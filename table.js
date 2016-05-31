@@ -151,6 +151,15 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
  			};
  		};
 
+ 		var lpy=0;
+ 		var i=1;
+ 		while (treatedNR[i] < 0) {
+ 			lpy++;
+ 		}
+ 		while (treatedNR[i] > 0) {
+ 			lpy++;
+ 		}
+
  		//BEP
  		var healthyCDNRna = 0;
  		for (var i in healthyYields) {
@@ -161,10 +170,10 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
  		if (bep > 1)
  			bep = 1;
 
-		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</th><th>ACDNB</th><th>Breakeven age</th><th>Breakeven probability</th></thead><tbody>';
+		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</th><th>ACDNB</th><th>Breakeven age</th><th>Last profitabe year</th><th>Breakeven probability</th></thead><tbody>';
 
 		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td><td>' + ccthv[k] + '</td><td>' + acdnb[k] + '</td><td>' + bea + '</td><td>' + bep + '</td></tr>';
+			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td><td>' + ccthv[k] + '</td><td>' + acdnb[k] + '</td><td>' + bea + '</td><td>' + lpy + '</td><td>' + bep + '</td></tr>';
 		}
 
 		the_table_html += '</tbody></table>';
