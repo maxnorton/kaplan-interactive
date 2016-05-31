@@ -1,14 +1,12 @@
 var t, a, eff, discount; // indices
 var cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4; // user-set parameters
-var cdnr, dnr, nr, yields = new Array(); // outcomes
+var treatedCDNR, treatedDNR, treatedNR, treatedYields = new Array(); // outcomes
 var costs, pcFtnOfT, isProfitable = new Array(); // collation arrays
 
 function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
 	d3.tsv("yield-rates.tsv", function(data) {
 
-		console.log(efficacy + 'y' + age);
 		var selectCol = (efficacy==0) ? 'noAction' : efficacy + 'y' + age;
-		console.log(selectCol);
 		healthyYields = [
 			yield0,
 			yield0,
@@ -37,22 +35,16 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			yield4,
 			yield4		
 		];
-		console.log(healthyYields);
 
 		untreatedYields = [];
 		for (var i in healthyYields) {
-			console.log(data[i]['noAction']);
 			untreatedYields[i] = healthyYields[i]*data[i]['noAction']/100;
-			console.log(data[i]['noAction']/100);
 		}
-		console.log(untreatedYields);
 
-		var yields = [];
+		var treatedYields = [];
 		for (var i in healthyYields) {
-			yields[i] = healthyYields[i]*data[i][selectCol]/100;
-			console.log(data[i][selectCol]/100);
+			treatedYields[i] = healthyYields[i]*data[i][selectCol]/100;
 		};
-		console.log(yields);
 
 		costs = [
 			cost0,
@@ -83,10 +75,6 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			cost3			
 		];
 
-		console.log(costs);
-		console.log(price);
-		console.log(yields);
-
 		var pcFtnOfT = [];
 
 		for (var l=0; l<age; l++) {
@@ -96,85 +84,83 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			pcFtnOfT[l] = pc;
 		};
 
-		console.log(pcFtnOfT);
-
-		nr = [
-			price*yields[0]-costs[0]-pcFtnOfT[0],
-			price*yields[1]-costs[1]-pcFtnOfT[1],
-			price*yields[2]-costs[2]-pcFtnOfT[2],
-			price*yields[3]-costs[3]-pcFtnOfT[3],
-			price*yields[4]-costs[4]-pcFtnOfT[4],
-			price*yields[5]-costs[5]-pcFtnOfT[5],
-			price*yields[6]-costs[6]-pcFtnOfT[6],
-			price*yields[7]-costs[7]-pcFtnOfT[7],
-			price*yields[8]-costs[8]-pcFtnOfT[8],
-			price*yields[9]-costs[9]-pcFtnOfT[9],
-			price*yields[10]-costs[10]-pcFtnOfT[10],
-			price*yields[11]-costs[11]-pcFtnOfT[11],
-			price*yields[12]-costs[12]-pcFtnOfT[12],
-			price*yields[13]-costs[13]-pcFtnOfT[13],
-			price*yields[14]-costs[14]-pcFtnOfT[14],
-			price*yields[15]-costs[15]-pcFtnOfT[15],
-			price*yields[16]-costs[16]-pcFtnOfT[16],
-			price*yields[17]-costs[17]-pcFtnOfT[17],
-			price*yields[18]-costs[18]-pcFtnOfT[18],
-			price*yields[19]-costs[19]-pcFtnOfT[19],
-			price*yields[20]-costs[20]-pcFtnOfT[20],
-			price*yields[21]-costs[21]-pcFtnOfT[21],
-			price*yields[22]-costs[22]-pcFtnOfT[22],
-			price*yields[23]-costs[23]-pcFtnOfT[23],
-			price*yields[24]-costs[24]-pcFtnOfT[24],
-			price*yields[25]-costs[25]-pcFtnOfT[25]
+		treatedNR = [
+			price*treatedYields[0]-costs[0]-pcFtnOfT[0],
+			price*treatedYields[1]-costs[1]-pcFtnOfT[1],
+			price*treatedYields[2]-costs[2]-pcFtnOfT[2],
+			price*treatedYields[3]-costs[3]-pcFtnOfT[3],
+			price*treatedYields[4]-costs[4]-pcFtnOfT[4],
+			price*treatedYields[5]-costs[5]-pcFtnOfT[5],
+			price*treatedYields[6]-costs[6]-pcFtnOfT[6],
+			price*treatedYields[7]-costs[7]-pcFtnOfT[7],
+			price*treatedYields[8]-costs[8]-pcFtnOfT[8],
+			price*treatedYields[9]-costs[9]-pcFtnOfT[9],
+			price*treatedYields[10]-costs[10]-pcFtnOfT[10],
+			price*treatedYields[11]-costs[11]-pcFtnOfT[11],
+			price*treatedYields[12]-costs[12]-pcFtnOfT[12],
+			price*treatedYields[13]-costs[13]-pcFtnOfT[13],
+			price*treatedYields[14]-costs[14]-pcFtnOfT[14],
+			price*treatedYields[15]-costs[15]-pcFtnOfT[15],
+			price*treatedYields[16]-costs[16]-pcFtnOfT[16],
+			price*treatedYields[17]-costs[17]-pcFtnOfT[17],
+			price*treatedYields[18]-costs[18]-pcFtnOfT[18],
+			price*treatedYields[19]-costs[19]-pcFtnOfT[19],
+			price*treatedYields[20]-costs[20]-pcFtnOfT[20],
+			price*treatedYields[21]-costs[21]-pcFtnOfT[21],
+			price*treatedYields[22]-costs[22]-pcFtnOfT[22],
+			price*treatedYields[23]-costs[23]-pcFtnOfT[23],
+			price*treatedYields[24]-costs[24]-pcFtnOfT[24],
+			price*treatedYields[25]-costs[25]-pcFtnOfT[25]
 		];
 
-		dnr = [
-			nr[0]*(1/(1+discount/100)),
-			nr[1]*(1/(1+discount/100)),
-			nr[2]*(1/(1+discount/100)),
-			nr[3]*(1/(1+discount/100)),
-			nr[4]*(1/(1+discount/100)),
-			nr[5]*(1/(1+discount/100)),
-			nr[6]*(1/(1+discount/100)),
-			nr[7]*(1/(1+discount/100)),
-			nr[8]*(1/(1+discount/100)),
-			nr[9]*(1/(1+discount/100)),
-			nr[10]*(1/(1+discount/100)),
-			nr[11]*(1/(1+discount/100)),
-			nr[12]*(1/(1+discount/100)),
-			nr[13]*(1/(1+discount/100)),
-			nr[14]*(1/(1+discount/100)),
-			nr[15]*(1/(1+discount/100)),
-			nr[16]*(1/(1+discount/100)),
-			nr[17]*(1/(1+discount/100)),
-			nr[18]*(1/(1+discount/100)),
-			nr[19]*(1/(1+discount/100)),
-			nr[20]*(1/(1+discount/100)),
-			nr[21]*(1/(1+discount/100)),
-			nr[22]*(1/(1+discount/100)),
-			nr[23]*(1/(1+discount/100)),
-			nr[24]*(1/(1+discount/100)),
-			nr[25]*(1/(1+discount/100))
+		treatedDNR = [
+			treatedNR[0]*(1/(1+discount/100)),
+			treatedNR[1]*(1/(1+discount/100)),
+			treatedNR[2]*(1/(1+discount/100)),
+			treatedNR[3]*(1/(1+discount/100)),
+			treatedNR[4]*(1/(1+discount/100)),
+			treatedNR[5]*(1/(1+discount/100)),
+			treatedNR[6]*(1/(1+discount/100)),
+			treatedNR[7]*(1/(1+discount/100)),
+			treatedNR[8]*(1/(1+discount/100)),
+			treatedNR[9]*(1/(1+discount/100)),
+			treatedNR[10]*(1/(1+discount/100)),
+			treatedNR[11]*(1/(1+discount/100)),
+			treatedNR[12]*(1/(1+discount/100)),
+			treatedNR[13]*(1/(1+discount/100)),
+			treatedNR[14]*(1/(1+discount/100)),
+			treatedNR[15]*(1/(1+discount/100)),
+			treatedNR[16]*(1/(1+discount/100)),
+			treatedNR[17]*(1/(1+discount/100)),
+			treatedNR[18]*(1/(1+discount/100)),
+			treatedNR[19]*(1/(1+discount/100)),
+			treatedNR[20]*(1/(1+discount/100)),
+			treatedNR[21]*(1/(1+discount/100)),
+			treatedNR[22]*(1/(1+discount/100)),
+			treatedNR[23]*(1/(1+discount/100)),
+			treatedNR[24]*(1/(1+discount/100)),
+			treatedNR[25]*(1/(1+discount/100))
 		];
 
-		cdnr = [ dnr[0] ];
+		treatedCDNR = [ treatedDNR[0] ];
 		for (var m=1; m<26; m++) {
-			cdnr[m] = dnr[m] + cdnr[m-1];
+			treatedCDNR[m] = treatedDNR[m] + treatedCDNR[m-1];
 		};
 
 		/*var acdnb = [];
-		for (var i in dnr) {
+		for (var i in treatedDNR) {
 			acdnb = 
 		}*/
 
 		isProfitable = [ null ];
 		for (var n=1; n<26; n++) {
-			isProfitable[n] = ( dnr[n] > 0 ) ? 1 : 0;
+			isProfitable[n] = ( treatedDNR[n] > 0 ) ? 1 : 0;
 		}; // in what case would the cumDNR slope up but never climb over zero? confused.
 
 		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th></thead><tbody>';
 
 		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + yields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + nr[k] + '</td><td>' + dnr[k] + '</td><td>' + cdnr[k] + '</td></tr>';
+			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td></tr>';
 		}
 
 		the_table_html += '</tbody></table>';
