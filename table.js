@@ -93,6 +93,11 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			healthyNR[i] = price*healthyYields[i]-costs[i]-pcFtnOfT[i];
 		};
 
+		var untreatedNR = [];
+		for (var i in untreatedYields) {
+			untreatedNR[i] = price*untreatedYields[i]-costs[i]-pcFtnOfT[i];
+		};
+
 		var treatedDNR = [];
 		for (var i in treatedNR) {
 			treatedDNR[i] = treatedNR[i]*(1/(1+discount/100));
@@ -101,6 +106,11 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		var healthyDNR = [];
 		for (var i in healthyNR) {
 			healthyDNR[i] = healthyNR[i]*(1/(1+discount/100));
+		};
+
+		var untreatedDNR = [];
+		for (var i in untreatedNR) {
+			untreatedDNR[i] = untreatedNR[i]*(1/(1+discount/100));
 		};
 
 		var treatedCDNR = [ treatedDNR[0] ];
@@ -113,25 +123,30 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			healthyCDNR[i] = healthyDNR[i] + healthyCDNR[i-1];
 		};
 
+		var untreatedCDNR = [ untreatedDNR[0] ];
+		for (var i=1; i<untreatedDNR.length; i++) {
+			untreatedCDNR[i] = untreatedDNR[i] + untreatedCDNR[i-1];
+		};
+
 		var ccthv = [ parseInt(pcFtnOfT[0]) ];
 		for (var i=1; i<healthyDNR.length; i++) {
 			ccthv[i] = parseInt(pcFtnOfT[i]) + parseInt(ccthv[i-1]);
 		};
 
-		/*var acdnb = [];
-		for (var i in treatedDNR) {
-			acdnb = 
-		}*/
+		var acdnb = [];
+		for (var i in treatedCDNR) {
+			acdnb[i] = treatedCDNR[i] - untreatedCDNR[i];
+ 		};
 
 		isProfitable = [ null ];
 		for (var n=1; n<26; n++) {
 			isProfitable[n] = ( treatedDNR[n] > 0 ) ? 1 : 0;
 		}; // in what case would the cumDNR slope up but never climb over zero? confused.
 
-		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</thead><tbody>';
+		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</th><th>ACDNB</th></thead><tbody>';
 
 		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td><td>' + ccthv[k] + '<td></tr>';
+			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td><td>' + ccthv[k] + '</td><td>' + acdnb[k] + '</td></tr>';
 		}
 
 		the_table_html += '</tbody></table>';
