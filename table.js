@@ -88,14 +88,34 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			treatedNR[i] = price*treatedYields[i]-costs[i]-pcFtnOfT[i];
 		};
 
+		var healthyNR = [];
+		for (var i in healthyYields) {
+			healthyNR[i] = price*healthyYields[i]-costs[i]-pcFtnOfT[i];
+		};
+
 		var treatedDNR = [];
 		for (var i in treatedNR) {
 			treatedDNR[i] = treatedNR*(1/(1+discount/100));
 		};
 
-		treatedCDNR = [ treatedDNR[0] ];
-		for (var in in treatedDNR) {
-			treatedCDNR[m] = treatedDNR[m] + treatedCDNR[m-1];
+		var healthyDNR = [];
+		for (var i in healthyNR) {
+			healthyDNR[i] = healthyNR*(1/(1+discount/100));
+		};
+
+		var treatedCDNR = [ treatedDNR[0] ];
+		for (var i in treatedDNR) {
+			treatedCDNR[i] = treatedDNR[i] + treatedCDNR[i-1];
+		};
+
+		var healthyCDNR = [ healthyDNR[0] ];
+		for (var i in healthyDNR) {
+			healthyCDNR[i] = healthyDNR[i] + healthyCDNR[i-1];
+		};
+
+		var ccthv = [];
+		for (var i in healthyDNR) {
+			ccthv[i] = treatedCDNR[i] - healthyCDNR[i];
 		};
 
 		/*var acdnb = [];
@@ -108,10 +128,10 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			isProfitable[n] = ( treatedDNR[n] > 0 ) ? 1 : 0;
 		}; // in what case would the cumDNR slope up but never climb over zero? confused.
 
-		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th></thead><tbody>';
+		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</thead><tbody>';
 
 		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td></tr>';
+			the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td><td>' + ccthv[k] + '<td></tr>';
 		}
 
 		the_table_html += '</tbody></table>';
