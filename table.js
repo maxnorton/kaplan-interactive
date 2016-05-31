@@ -152,13 +152,16 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
  		};
 
  		var lpy=0;
- 		var i=1;
- 		while (treatedNR[i] < 0) {
+ 		while (treatedNR[lpy+1] < 0 && lpy<25) {
  			lpy++;
  		}
- 		while (treatedNR[i] > 0) {
- 			lpy++;
- 		}
+ 		if (lpy==25) {
+ 			lpy = 0;
+ 		} else {
+	 		while (treatedNR[lpy+1] > 0 && lpy<25) {
+	 			lpy++;
+	 		}
+	 	}
 
  		//BEP
  		var healthyCDNRna = 0;
