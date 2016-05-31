@@ -79,7 +79,7 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		for (var l=0; l<age; l++) {
 			pcFtnOfT[l] = 0;
 		};
-		for (l=age; l<26; l++) {
+		for (var l=age; l<26; l++) {
 			pcFtnOfT[l] = pc;
 		};
 
@@ -95,21 +95,21 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 
 		var treatedDNR = [];
 		for (var i in treatedNR) {
-			treatedDNR[i] = treatedNR*(1/(1+discount/100));
+			treatedDNR[i] = treatedNR[i]*(1/(1+discount/100));
 		};
 
 		var healthyDNR = [];
 		for (var i in healthyNR) {
-			healthyDNR[i] = healthyNR*(1/(1+discount/100));
+			healthyDNR[i] = healthyNR[i]*(1/(1+discount/100));
 		};
 
 		var treatedCDNR = [ treatedDNR[0] ];
-		for (var i in treatedDNR) {
+		for (var i=1; i<treatedDNR.length; i++) {
 			treatedCDNR[i] = treatedDNR[i] + treatedCDNR[i-1];
 		};
 
 		var healthyCDNR = [ healthyDNR[0] ];
-		for (var i in healthyDNR) {
+		for (var i=1; i<healthyDNR.length; i++) {
 			healthyCDNR[i] = healthyDNR[i] + healthyCDNR[i-1];
 		};
 
