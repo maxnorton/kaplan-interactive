@@ -95,7 +95,7 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 
 		var untreatedNR = [];
 		for (var i in untreatedYields) {
-			untreatedNR[i] = price*untreatedYields[i]-costs[i]-pcFtnOfT[i];
+			untreatedNR[i] = price*untreatedYields[i]-costs[i];
 		};
 
 		var treatedDNR = [];
