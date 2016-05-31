@@ -100,18 +100,22 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		};
 
 		var treatedDNR = [];
+		var discountFactor = 1/(1+discount/100);
 		for (var i in treatedNR) {
-			treatedDNR[i] = treatedNR[i]*(1/(1+discount/100)^i);
+			var compoundDiscount = Math.pow(discountFactor, i);
+			treatedDNR[i] = treatedNR[i]*compoundDiscount;
 		};
 
 		var healthyDNR = [];
 		for (var i in healthyNR) {
-			healthyDNR[i] = healthyNR[i]*(1/(1+discount/100)^i);
+			var compoundDiscount = Math.pow(discountFactor, i);
+			healthyDNR[i] = healthyNR[i]*compoundDiscount;
 		};
 
 		var untreatedDNR = [];
 		for (var i in untreatedNR) {
-			untreatedDNR[i] = untreatedNR[i]*(1/(1+discount/100)^i);
+			var compoundDiscount = Math.pow(discountFactor, i);
+			untreatedDNR[i] = untreatedNR[i]*compoundDiscount;
 		};
 
 		var treatedCDNR = [ treatedDNR[0] ];
