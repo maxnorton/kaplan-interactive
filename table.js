@@ -158,6 +158,8 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
  			healthyCDNRna += (price*healthyYields[i] - costs[i])*compoundDiscount;
  		};
  		var bep = (healthyCDNRna - healthyCDNR[25]) / ( (treatedCDNR[25] - healthyCDNR[25]) - (untreatedCDNR[25] - healthyCDNRna) );
+ 		if (bep > 1)
+ 			bep = 1;
 
 		var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</th><th>ACDNB</th><th>Breakeven age</th><th>Breakeven probability</th></thead><tbody>';
 
