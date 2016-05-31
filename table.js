@@ -113,9 +113,9 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			healthyCDNR[i] = healthyDNR[i] + healthyCDNR[i-1];
 		};
 
-		var ccthv = [];
-		for (var i in healthyDNR) {
-			ccthv[i] = treatedCDNR[i] - healthyCDNR[i];
+		var ccthv = [ parseInt(pcFtnOfT[0]) ];
+		for (var i=1; i<healthyDNR.length; i++) {
+			ccthv[i] = parseInt(pcFtnOfT[i]) + parseInt(ccthv[i-1]);
 		};
 
 		/*var acdnb = [];
