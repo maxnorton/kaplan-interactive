@@ -7,6 +7,7 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 	d3.tsv("yield-rates.tsv", function(data) {
 
 		var selectCol = (efficacy==0) ? 'noAction' : efficacy + 'y' + age;
+		console.log(selectCol);
 		healthyYields = [
 			yield0,
 			yield0,
@@ -100,17 +101,17 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 
 		var treatedDNR = [];
 		for (var i in treatedNR) {
-			treatedDNR[i] = treatedNR[i]*(1/(1+discount/100));
+			treatedDNR[i] = treatedNR[i]*(1/(1+discount/100)^i);
 		};
 
 		var healthyDNR = [];
 		for (var i in healthyNR) {
-			healthyDNR[i] = healthyNR[i]*(1/(1+discount/100));
+			healthyDNR[i] = healthyNR[i]*(1/(1+discount/100)^i);
 		};
 
 		var untreatedDNR = [];
 		for (var i in untreatedNR) {
-			untreatedDNR[i] = untreatedNR[i]*(1/(1+discount/100));
+			untreatedDNR[i] = untreatedNR[i]*(1/(1+discount/100)^i);
 		};
 
 		var treatedCDNR = [ treatedDNR[0] ];
