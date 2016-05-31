@@ -10,7 +10,6 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		console.log(selectCol);
 		healthyYields = [
 			yield0,
-			yield0,
 			yield1,
 			yield2,
 			yield3,
@@ -34,6 +33,7 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			yield4,
 			yield4,
 			yield4,
+			yield4,		
 			yield4		
 		];
 
