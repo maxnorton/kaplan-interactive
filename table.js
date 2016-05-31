@@ -6,6 +6,9 @@ var costs, pcFtnOfT, isProfitable = new Array(); // collation arrays
 function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
 	d3.tsv("yield-rates.tsv", function(data) {
 
+		var treatedYields, treatedNR, treatedDNR, treatedCDNR, ccthv, acdnb = new Array();
+		var bea, lpy, bep;
+
 		var scenarios = {
 			'healthy' : 'Healthy, untreated',
 			'untreated' : 'Infected, untreated',
@@ -19,6 +22,8 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 			'50y10' : '50% DCE treatment adopted year 10',
 			'75y10' : '75% DCE treatment adopted year 10'
 		};
+
+		var scenarioKeys = Object.keys(scenarios);
 
 		var discountFactor = 1/(1+discount/100);
 
@@ -121,10 +126,8 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		};
 
 		var untreatedCDNR = [ untreatedDNR[0] ];
-		console.log(untreatedCDNR[0]);
 		for (var i=1; i<untreatedDNR.length; i++) {
 			untreatedCDNR[i] = untreatedDNR[i] + untreatedCDNR[i-1];
-			console.log(untreatedCDNR[i]);
 		};
 
  		var healthyCDNRna = [ price*healthyYields[0] - costs[0] ];
@@ -133,66 +136,66 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
  			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNR[i-1];
  		};
 
+ 		for (var a=2; a<scenarioKeys.length; a++) {
 
+			var selectCol = scenarioKeys[a];
+			console.log(selectCol);
 
-				var selectCol = (efficacy==0) ? 'noAction' : efficacy + 'y' + age;
+			treatedYields = [];
+			for (var i in healthyYields) {
+				treatedYields[i] = healthyYields[i]*data[i][selectCol]/100;
+			};
 
-				var treatedYields = [];
-				for (var i in healthyYields) {
-					treatedYields[i] = healthyYields[i]*data[i][selectCol]/100;
-				};
+			treatedNR = [];
+			for (var i in treatedYields) {
+				treatedNR[i] = price*treatedYields[i]-costs[i]-pcFtnOfT[i];
+			};
 
-				var treatedNR = [];
-				for (var i in treatedYields) {
-					treatedNR[i] = price*treatedYields[i]-costs[i]-pcFtnOfT[i];
-				};
+		treatedDNR = [];
+			for (var i in treatedNR) {
+				var compoundDiscount = Math.pow(discountFactor, i);
+				treatedDNR[i] = treatedNR[i]*compoundDiscount;
+			};
 
-				var treatedDNR = [];
-				for (var i in treatedNR) {
-					var compoundDiscount = Math.pow(discountFactor, i);
-					treatedDNR[i] = treatedNR[i]*compoundDiscount;
-				};
+			treatedCDNR = [ treatedDNR[0] ];
+			for (var i=1; i<treatedDNR.length; i++) {
+				treatedCDNR[i] = treatedDNR[i] + treatedCDNR[i-1];
+			};
 
-				var treatedCDNR = [ treatedDNR[0] ];
-				for (var i=1; i<treatedDNR.length; i++) {
-					treatedCDNR[i] = treatedDNR[i] + treatedCDNR[i-1];
-				};
+			ccthv = [ parseInt(pcFtnOfT[0]) ];
+			for (var i=1; i<healthyDNR.length; i++) {
+				ccthv[i] = parseInt(pcFtnOfT[i]) + parseInt(ccthv[i-1]);
+			};
 
-				var ccthv = [ parseInt(pcFtnOfT[0]) ];
-				for (var i=1; i<healthyDNR.length; i++) {
-					ccthv[i] = parseInt(pcFtnOfT[i]) + parseInt(ccthv[i-1]);
-				};
+			acdnb = [];
+			for (var i in treatedCDNR) {
+				acdnb[i] = treatedCDNR[i] - untreatedCDNR[i];
+	 		};
 
-				var acdnb = [];
-				for (var i in treatedCDNR) {
-					console.log(treatedCDNR[i]);
-					console.log(untreatedCDNR[i]);
-					acdnb[i] = treatedCDNR[i] - untreatedCDNR[i];
-		 		};
+	 		for (var i in treatedCDNR) {
+	 			if (treatedCDNR[i] > untreatedCDNR[i]) {
+	 				bea = i;
+	 				break;
+	 			};
+	 		};
 
-		 		var bea;
-		 		for (var i in treatedCDNR) {
-		 			if (treatedCDNR[i] > untreatedCDNR[i]) {
-		 				bea = i;
-		 				break;
-		 			};
-		 		};
-
-		 		var lpy=0;
-		 		while (treatedNR[lpy+1] < 0 && lpy<25) {
+	 		lpy=0;
+	 		while (treatedNR[lpy+1] < 0 && lpy<25) {
+	 			lpy++;
+	 		}
+	 		if (lpy==25) {
+	 			lpy = 'Never profitable';
+	 		} else {
+		 		while (treatedNR[lpy+1] > 0 && lpy<25) {
 		 			lpy++;
 		 		}
-		 		if (lpy==25) {
-		 			lpy = 'Never profitable';
-		 		} else {
-			 		while (treatedNR[lpy+1] > 0 && lpy<25) {
-			 			lpy++;
-			 		}
-			 	}
+		 	}
 
-		 		var bep = (healthyCDNRna[25] - healthyCDNR[25]) / ( (treatedCDNR[25] - healthyCDNR[25]) - (untreatedCDNR[25] - healthyCDNRna[25]) );
-		 		if (bep > 1)
-		 			bep = 1;
+	 		bep = (healthyCDNRna[25] - healthyCDNR[25]) / ( (treatedCDNR[25] - healthyCDNR[25]) - (untreatedCDNR[25] - healthyCDNRna[25]) );
+	 		if (bep > 1)
+	 			bep = 1;
+
+	 	};
 
 				var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</th><th>ACDNB</th><th>Breakeven age</th><th>Last profitable year</th><th>Breakeven probability</th></thead><tbody>';
 
