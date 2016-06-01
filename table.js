@@ -7,7 +7,47 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 	d3.tsv("yield-rates.tsv", function(data) {
 
 		var healthyACDNBna, acdnb25y3, acdnb25y5, acdnb25y10, acdnb50y3, acdnb50y5, acdnb50y10, acdnb75y3, acdnb75y5, acdnb75y10, treatedYields, treatedNR, treatedDNR, treatedCDNR, ccthv = new Array();
-		var bea, lpy, bep;
+		var bea = {
+			'healthy' : null,
+			'untreated' : null,
+			'25y3' : 0,
+			'50y3' : 0,
+			'75y3' : 0,
+			'25y5' : 0,
+			'50y5' : 0,
+			'75y5' : 0,
+			'25y10' : 0,
+			'50y10' : 0,
+			'75y10' : 0			
+		};
+
+		var lpy = {
+			'healthy' : null,
+			'untreated' : null,
+			'25y3' : 0,
+			'50y3' : 0,
+			'75y3' : 0,
+			'25y5' : 0,
+			'50y5' : 0,
+			'75y5' : 0,
+			'25y10' : 0,
+			'50y10' : 0,
+			'75y10' : 0			
+		};
+
+		var bep = {
+			'healthy' : 0,
+			'untreated' : 1,
+			'25y3' : 0,
+			'50y3' : 0,
+			'75y3' : 0,
+			'25y5' : 0,
+			'50y5' : 0,
+			'75y5' : 0,
+			'25y10' : 0,
+			'50y10' : 0,
+			'75y10' : 0			
+		};
 
 		var scenarios = {
 			'healthy' : 'Healthy, untreated',
@@ -208,30 +248,57 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 
 	 		for (var i in treatedCDNR) {
 	 			if (treatedCDNR[i] > untreatedCDNR[i]) {
-	 				bea = i;
+	 				bea[selectCol] = i;
 	 				break;
 	 			};
 	 		};
+	 		if (bea[selectCol]==0 && treatedCDNR[0] <= untreatedCDNR[0]) {
+	 			bea[selectCol] = 'Never breaks even';
+	 		};
 
-	 		lpy=0;
-	 		while (treatedNR[lpy+1] < 0 && lpy<25) {
-	 			lpy++;
+	 		lpy[selectCol] = selectCol.substr(3);
+	 		console.log('outside while: ' + (parseInt(lpy[selectCol])+1));
+ 			console.log(treatedNR[parseInt(lpy[selectCol])+1]);
+	 		while (treatedNR[parseInt(lpy[selectCol])+1] <= 0 && parseInt(lpy[selectCol])<25) {
+	 			console.log('inside while');
+	 			console.log(treatedNR[parseInt(lpy[selectCol])+1]);
+	 			lpy[selectCol]++;
 	 		}
-	 		if (lpy==25) {
-	 			lpy = 'Never profitable';
+	 		if (parseInt(lpy[selectCol])==25) {
+	 			lpy[selectCol] = 'Treatment never profitable';
 	 		} else {
-		 		while (treatedNR[lpy+1] > 0 && lpy<25) {
-		 			lpy++;
+		 		while (treatedNR[parseInt(lpy[selectCol])+1] > 0 && parseInt(lpy[selectCol])<25) {
+		 			console.log('inside 2nd while');
+	 				console.log(treatedNR[parseInt(lpy[selectCol])+1]);
+		 			lpy[selectCol]++;
 		 		}
 		 	}
 
-	 		bep = (healthyCDNRna[25] - healthyCDNR[25]) / ( (treatedCDNR[25] - healthyCDNR[25]) - (untreatedCDNR[25] - healthyCDNRna[25]) );
-	 		if (bep > 1)
-	 			bep = 1;
+	 		bep[selectCol] = (healthyCDNRna[25] - healthyCDNR[25]) / ( (treatedCDNR[25] - healthyCDNR[25]) - (untreatedCDNR[25] - healthyCDNRna[25]) );
+	 		if (bep[selectCol] > 1)
+	 			bep[selectCol] = 1;
 
 	 	};
 
 		var the_table_html = '<table><thead><th>Age</th><th>Infected, untreated CDNB</th><th>Healthy, untreated ACDNB</th><th>25% DCE year 3 ADCNB</th><th>50% DCE year 3 ADCNB</th><th>75% DCE year 3 ADCNB</th><th>25% DCE year 5 ADCNB</th><th>50% DCE year 5 ADCNB</th><th>75% DCE year 5 ADCNB</th><th>25% DCE year 10 ADCNB</th><th>50% DCE year 10 ADCNB</th><th>75% DCE year 10 ADCNB</th></thead><tbody>';
+
+		the_table_html += '<tr><td>Breakeven age</td><td></td><td></td>';
+		for (var i=2; i<scenarioKeys.length; i++) {
+			the_table_html += '<td>' + bea[scenarioKeys[i]] + '</td>';
+		};
+		the_table_html += '</tr>';
+
+		the_table_html += '<tr><td>Last profitable year</td><td></td><td></td>';
+		for (var i=2; i<scenarioKeys.length; i++) {
+			the_table_html += '<td>' + lpy[scenarioKeys[i]] + '</td>';
+		};
+		the_table_html += '</tr>';
+
+		the_table_html += '<tr><td>Breakeven probability</td><td></td><td></td>';
+		for (var i=2; i<scenarioKeys.length; i++) {
+			the_table_html += '<td>' + bep[scenarioKeys[i]] + '</td>';
+		};
+		the_table_html += '</tr>';
 
 		for (var k=0; k<26; k++) {
 			the_table_html += '<tr><td>' + k + '</td><td>' + untreatedCDNR[k] + '</td><td>' + healthyACDNBna[k] + '</td><td>' + acdnb25y3[k] + '</td><td>' + acdnb50y3[k] + '</td><td>' + acdnb75y3[k] + '</td><td>' + acdnb25y5[k] + '</td><td>' + acdnb50y5[k] + '</td><td>' + acdnb75y5[k] + '</td><td>' + acdnb25y10[k] + '</td><td>' + acdnb50y10[k] + '</td><td>' + acdnb75y10[k] + '</td></tr>';
