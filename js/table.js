@@ -151,8 +151,9 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  		var healthyLPY = '-';
  		for (var i=1; i<healthyYields.length; i++) {
  			var compoundDiscount = Math.pow(discountFactor, i);
- 			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[i-1];
- 			if (healthyCDNRna[i] > healthyCDNRna[i-1]) {
+ 			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[parseInt(i-1)];
+ 			console.log(healthyCDNRna[i]);
+ 			if (healthyCDNRna[i] > healthyCDNRna[parseInt(i-1)]) {
  				healthyACDNBnaDisplay = healthyCDNRna[i];
  				healthyLPY = i;
  			}
