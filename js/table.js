@@ -313,6 +313,7 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 	 		bep[selectCol] = (healthyCDNRna[25] - healthyCDNR[25]) / ( (treatedCDNR[25] - healthyCDNR[25]) - (untreatedCDNR[25] - healthyCDNRna[25]) );
 	 		if (bep[selectCol] > 1)
 	 			bep[selectCol] = 1;
+	 		bep[selectCol] = bep[selectCol].toFixed(3);
 
 	 		var acdnbDisplay = (acdnb[parseInt(lpy[selectCol])] != null ) ? acdnb[parseFloat(lpy[selectCol])].toFixed(2) : '-';
 	 		if (acdnbDisplay != '-' && acdnbDisplay < 0) {
