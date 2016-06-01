@@ -157,7 +157,7 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  			healthyACDNBna[i] = healthyCDNRna[i] - untreatedCDNR[i];
  		};
 
- 		var the_table_html = '<table><thead><th>Scenario</th><th>ACDNB in last profitable year</th><th>Breakeven age</th><th>Last profitable year</th><th>Breakeven probability</th></thead><tbody>';
+ 		var the_table_html = '<hr /><h2>Results</h2><table><thead><th>Scenario</th><th>ACDNB in last profitable year</th><th>Breakeven age</th><th>Last profitable year</th><th>Breakeven probability</th></thead><tbody>';
 
  		for (var a=2; a<scenarioKeys.length; a++) {
 
@@ -284,5 +284,8 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 
 		the_table_html += '</tbody></table>';
 		$('.results').html(the_table_html);
+
+		$('body,html').stop(true,true).animate({scrollTop: $('#results').offset().top - $('header').height()}, '500', 'swing');
+
 	});
 };
