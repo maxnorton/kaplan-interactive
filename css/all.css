@@ -196,7 +196,9 @@ table.form {
     height: 1.5em;
     padding: .5em;
     text-align: center; }
+  .results table th:first-of-type,
   .results table td:first-of-type,
+  table.form th:first-of-type,
   table.form td:first-of-type {
     text-align: left; }
   .results table th,
