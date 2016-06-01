@@ -147,17 +147,49 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 		};
 
  		var healthyCDNRna = [ price*healthyYields[0] - costs[0] ];
+ 		var healthyACDNBnaDisplay;
+ 		var healthyLPY = '-';
  		for (var i=1; i<healthyYields.length; i++) {
  			var compoundDiscount = Math.pow(discountFactor, i);
  			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[i-1];
+ 			if (healthyCDNRna[i] > healthyCDNRna[i-1]) {
+ 				healthyACDNBnaDisplay = healthyCDNRna[i];
+ 				healthyLPY = i;
+ 			}
  		};
+
+ 		var healthyBEAnaDisplay = -1;
+ 		for (var i in healthyCDNRna) {
+ 			if (healthyCDNRna[i+1] > 0) {
+ 				healthyBEAnaDisplay = i;
+ 				break;
+ 			};
+ 		};
+ 		if (healthyBEAnaDisplay == -1) {
+ 			healthyBEAnaDisplay  = 'Never breaks even';
+ 			healthyLPY = '-';
+ 		}
 
  		healthyACDNBna = [];
  		for (var i in healthyCDNRna) {
  			healthyACDNBna[i] = healthyCDNRna[i] - untreatedCDNR[i];
  		};
 
+ 		var untreatedLPY = 0;
+		while (untreatedCDNR[untreatedLPY] < 0 && untreatedLPY < 25) {
+ 			untreatedLPY++;
+ 		}
+ 		if (untreatedLPY==25) {
+ 			untreatedLPY = 'Untreated vineyard never profitable';
+ 		} else {
+	 		while (untreatedCDNR[untreatedLPY] > 0 && untreatedLPY < 25) {
+	 			untreatedLPY++;
+	 		}
+	 	}
+
  		var the_table_html = '<hr /><h2>Results</h2><table><thead><th>Scenario</th><th>ACDNB in last profitable year</th><th>Breakeven age</th><th>Last profitable year</th><th>Breakeven probability</th></thead><tbody>';
+		the_table_html += '<tr><td>' + scenarios['healthy'] + '</td><td>' + healthyACDNBnaDisplay + '</td><td>' + healthyBEAnaDisplay + '</td><td>' + healthyLPY + '</td><td>' + 0 + '</td></tr>';
+		the_table_html += '<tr><td>' + scenarios['untreated'] + '</td><td>' + '-' + '</td><td>' + '-' + '</td><td>' + untreatedLPY + '</td><td>' + 1 + '</td></tr>';
 
  		for (var a=2; a<scenarioKeys.length; a++) {
 
