@@ -24,7 +24,7 @@
 <!-- @import ../markdown/compiled/instructions.html -->
 </fieldset>
 
-<form id="theform">
+<section class="form">
 
 	<label for="discount">Discount rate (%)</label> <input type="text" name="discount" id="discount" value="3" /><br />
 	<label for="cost0">Cost0</label> <input type="text" name="cost0" id="cost0" value="12213" /><br />
@@ -40,7 +40,7 @@
 	<label for="yield4">Yield4</label> <input type="text" name="yield4" id="yield4" value="4" /><br />
 	<button id="submit">Display returns to this practice</button>
 
-</form>
+</section>
 
 <section id="results" class="results"></section>
 
@@ -53,10 +53,6 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#submit').click(function() {
-			/*var the_user_inputs = $('input');
-			for (var i=0; i<the_user_inputs.length; i++) {
-
-			}*/
 			the_table(	$('input#discount').val(),
 						$('input#cost0').val(),
 						$('input#cost1').val(),
