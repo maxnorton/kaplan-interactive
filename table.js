@@ -6,7 +6,7 @@ var costs, pcFtnOfT, isProfitable = new Array(); // collation arrays
 function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
 	d3.tsv("yield-rates.tsv", function(data) {
 
-		var treatedYields, treatedNR, treatedDNR, treatedCDNR, ccthv, acdnb = new Array();
+		var healthyACDNBna, acdnb25y3, acdnb25y5, acdnb25y10, acdnb50y3, acdnb50y5, acdnb50y10, acdnb75y3, acdnb75y5, acdnb75y10, treatedYields, treatedNR, treatedDNR, treatedCDNR, ccthv = new Array();
 		var bea, lpy, bep;
 
 		var scenarios = {
@@ -136,10 +136,14 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
  			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNR[i-1];
  		};
 
+ 		healthyACDNBna = [];
+ 		for (var i in healthyCDNRna) {
+ 			healthyACDNBna[i] = healthyCDNRna[i] - untreatedCDNR[i];
+ 		};
+
  		for (var a=2; a<scenarioKeys.length; a++) {
 
 			var selectCol = scenarioKeys[a];
-			console.log(selectCol);
 
 			treatedYields = [];
 			for (var i in healthyYields) {
@@ -151,7 +155,7 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 				treatedNR[i] = price*treatedYields[i]-costs[i]-pcFtnOfT[i];
 			};
 
-		treatedDNR = [];
+			treatedDNR = [];
 			for (var i in treatedNR) {
 				var compoundDiscount = Math.pow(discountFactor, i);
 				treatedDNR[i] = treatedNR[i]*compoundDiscount;
@@ -167,10 +171,40 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 				ccthv[i] = parseInt(pcFtnOfT[i]) + parseInt(ccthv[i-1]);
 			};
 
-			acdnb = [];
+			var acdnb = [];
 			for (var i in treatedCDNR) {
 				acdnb[i] = treatedCDNR[i] - untreatedCDNR[i];
 	 		};
+
+	 		switch (selectCol) {
+	 			case '25y3':
+	 				acdnb25y3 = acdnb;
+	 				break;
+	 			case '25y5':
+	 				acdnb25y5 = acdnb;
+	 				break;
+	 			case '25y10':
+	 				acdnb25y10 = acdnb;
+	 				break;
+	 			case '50y3':
+	 				acdnb50y3 = acdnb;
+	 				break;
+	 			case '50y5':
+	 				acdnb50y5 = acdnb;
+	 				break;
+	 			case '50y10':
+	 				acdnb50y10 = acdnb;
+	 				break;
+	 			case '75y3':
+	 				acdnb75y3 = acdnb;
+	 				break;
+	 			case '75y5':
+	 				acdnb75y5 = acdnb;
+	 				break;
+	 			case '75y10':
+	 				acdnb75y10 = acdnb;
+	 				break;
+	 		}
 
 	 		for (var i in treatedCDNR) {
 	 			if (treatedCDNR[i] > untreatedCDNR[i]) {
@@ -197,13 +231,13 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 
 	 	};
 
-				var the_table_html = '<table><thead><th>Age</th><th>Healthy yield</th><th>Untreated yield</th><th>Treated yield</th><th>Cultural costs</th><th>Practice costs</th><th>NR</th><th>DNR</th><th>CDNR</th><th>Cum cost of treating healthy vineyard</th><th>ACDNB</th><th>Breakeven age</th><th>Last profitable year</th><th>Breakeven probability</th></thead><tbody>';
+		var the_table_html = '<table><thead><th>Age</th><th>Infected, untreated CDNB</th><th>Healthy, untreated ACDNB</th><th>25% DCE year 3 ADCNB</th><th>50% DCE year 3 ADCNB</th><th>75% DCE year 3 ADCNB</th><th>25% DCE year 5 ADCNB</th><th>50% DCE year 5 ADCNB</th><th>75% DCE year 5 ADCNB</th><th>25% DCE year 10 ADCNB</th><th>50% DCE year 10 ADCNB</th><th>75% DCE year 10 ADCNB</th></thead><tbody>';
 
-				for (var k=0; k<26; k++) {
-					the_table_html += '<tr><td>' + k + '</td><td>' + healthyYields[k] + '</td><td>' + untreatedYields[k] + '</td><td>' + treatedYields[k] + '</td><td>' + costs[k] + '</td><td>' + pcFtnOfT[k] + '</td><td>' + treatedNR[k] + '</td><td>' + treatedDNR[k] + '</td><td>' + treatedCDNR[k] + '</td><td>' + ccthv[k] + '</td><td>' + acdnb[k] + '</td><td>' + bea + '</td><td>' + lpy + '</td><td>' + bep + '</td></tr>';
-				}
+		for (var k=0; k<26; k++) {
+			the_table_html += '<tr><td>' + k + '</td><td>' + untreatedCDNR[k] + '</td><td>' + healthyACDNBna[k] + '</td><td>' + acdnb25y3[k] + '</td><td>' + acdnb50y3[k] + '</td><td>' + acdnb75y3[k] + '</td><td>' + acdnb25y5[k] + '</td><td>' + acdnb50y5[k] + '</td><td>' + acdnb75y5[k] + '</td><td>' + acdnb25y10[k] + '</td><td>' + acdnb50y10[k] + '</td><td>' + acdnb75y10[k] + '</td></tr>';
+		}
 
-				the_table_html += '</tbody></table>';
-				$('.results').html(the_table_html);
+		the_table_html += '</tbody></table>';
+		$('.results').html(the_table_html);
 	});
 };
