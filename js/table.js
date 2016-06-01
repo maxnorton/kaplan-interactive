@@ -188,7 +188,7 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 	 	}
 
  		var the_table_html = '<hr /><h2>Results</h2><table><thead><th>Scenario</th><th>ACDNB in last profitable year</th><th>Breakeven age</th><th>Last profitable year</th><th>Breakeven probability</th></thead><tbody>';
-		the_table_html += '<tr><td>' + scenarios['healthy'] + '</td><td>' + healthyACDNBnaDisplay + '</td><td>' + healthyBEAnaDisplay + '</td><td>' + healthyLPY + '</td><td>' + 0 + '</td></tr>';
+		the_table_html += '<tr><td>' + scenarios['healthy'] + '</td><td>' + '$' + healthyACDNBnaDisplay.toFixed(2) + '</td><td>' + healthyBEAnaDisplay + '</td><td>' + healthyLPY + '</td><td>' + 0 + '</td></tr>';
 		the_table_html += '<tr><td>' + scenarios['untreated'] + '</td><td>' + '-' + '</td><td>' + '-' + '</td><td>' + untreatedLPY + '</td><td>' + 1 + '</td></tr>';
 
  		for (var a=2; a<scenarioKeys.length; a++) {
@@ -310,7 +310,7 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 
 	 		var acdnbDisplay = (acdnb[parseInt(lpy[selectCol])] != null ) ? acdnb[parseInt(lpy[selectCol])] : '-';
 
-			the_table_html += '<tr><td>' + scenarios[selectCol] + '</td><td>' + acdnbDisplay + '</td><td>' + bea[selectCol] + '</td><td>' + lpy[selectCol] + '</td><td>' + bep[selectCol] + '</td></tr>';
+			the_table_html += '<tr><td>' + scenarios[selectCol] + '</td><td>' + '$' + acdnbDisplay.toFixed(2) + '</td><td>' + bea[selectCol] + '</td><td>' + lpy[selectCol] + '</td><td>' + bep[selectCol] + '</td></tr>';
 
 	 	};
 
