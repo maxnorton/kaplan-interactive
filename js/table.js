@@ -160,6 +160,8 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  		};
  		if (healthyACDNBnaDisplay < 0) {
  			healthyACDNBnaDisplay = '-$' + parseFloat(-1*healthyACDNBnaDisplay).toFixed(2);
+ 		} else {
+ 			healthyACDNBnaDisplay = '$' + parseFloat(healthyACDNBnaDisplay).toFixed(2);
  		}
 
  		var healthyBEAnaDisplay = -1;
@@ -312,7 +314,12 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 	 		if (bep[selectCol] > 1)
 	 			bep[selectCol] = 1;
 
-	 		var acdnbDisplay = (acdnb[parseInt(lpy[selectCol])] != null ) ? '$' + acdnb[parseInt(lpy[selectCol])].toFixed(2) : '-';
+	 		var acdnbDisplay = (acdnb[parseInt(lpy[selectCol])] != null ) ? acdnb[parseFloat(lpy[selectCol])].toFixed(2) : '-';
+	 		if (acdnbDisplay != '-' && acdnbDisplay < 0) {
+ 				acdnbDisplay = '-$' + parseFloat(-1*acdnbDisplay).toFixed(2);
+ 			} else if (acdnbDisplay != '-') {
+ 				acdnbDisplay = '$' + parseFloat(acdnbDisplay).toFixed(2);
+ 			}
 
 			the_table_html += '<tr><td>' + scenarios[selectCol] + '</td><td>' + acdnbDisplay + '</td><td>' + bea[selectCol] + '</td><td>' + lpy[selectCol] + '</td><td>' + bep[selectCol] + '</td></tr>';
 
