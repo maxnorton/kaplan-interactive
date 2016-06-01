@@ -267,9 +267,11 @@ x.class-with-hyphens-separating-words {
 /* SECONDARY LAYOUT
 ------------------------------ */
 
-.results table {
+.results table,
+table.form {
 	border: 1px solid #ccc;
 	border-spacing: 0;
+	margin-bottom: 10px;
 
 	td {
 		height: 1.5em;
@@ -281,13 +283,11 @@ x.class-with-hyphens-separating-words {
 		text-align: left;
 	}
 
-	tr:first-of-type {
-		font-weight: bold;
-
-		td {
-			border-bottom: 1px solid #ccc;
-		}
+	th {
+		border-bottom: 1px solid #666;
+		background-color: #eee;
 	}
+
 	tr:nth-of-type(even) {
 		background-color: #eee;
 	}

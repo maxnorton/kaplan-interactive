@@ -183,20 +183,25 @@ x.class-with-hyphens-separating-words {
 
 /* SECONDARY LAYOUT
 ------------------------------ */
-.results table {
+.results table,
+table.form {
   border: 1px solid #ccc;
-  border-spacing: 0; }
-  .results table td {
+  border-spacing: 0;
+  margin-bottom: 10px; }
+  .results table td,
+  table.form td {
     height: 1.5em;
     padding: .5em;
     text-align: center; }
-  .results table td:first-of-type {
+  .results table td:first-of-type,
+  table.form td:first-of-type {
     text-align: left; }
-  .results table tr:first-of-type {
-    font-weight: bold; }
-    .results table tr:first-of-type td {
-      border-bottom: 1px solid #ccc; }
-  .results table tr:nth-of-type(even) {
+  .results table th,
+  table.form th {
+    border-bottom: 1px solid #666;
+    background-color: #eee; }
+  .results table tr:nth-of-type(even),
+  table.form tr:nth-of-type(even) {
     background-color: #eee; }
 
 .assumptionstable tr td:first-of-type {
