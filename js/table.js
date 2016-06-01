@@ -157,6 +157,8 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  			healthyACDNBna[i] = healthyCDNRna[i] - untreatedCDNR[i];
  		};
 
+ 		var the_table_html = '<table><thead><th>Scenario</th><th>ACDNB in last profitable year</th><th>Breakeven age</th><th>Last profitable year</th><th>Breakeven probability</th></thead><tbody>';
+
  		for (var a=2; a<scenarioKeys.length; a++) {
 
  			var selectCol = scenarioKeys[a];
@@ -274,31 +276,9 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 	 		if (bep[selectCol] > 1)
 	 			bep[selectCol] = 1;
 
+			the_table_html += '<tr><td>' + scenarios[selectCol] + '</td><td>' + acdnb[parseInt(lpy[selectCol])] + '</td><td>' + bea[selectCol] + '</td><td>' + lpy[selectCol] + '</td><td>' + bep[selectCol] + '</td></tr>';
+
 	 	};
-
-		var the_table_html = '<table><thead><th>Age</th><th>Infected, untreated CDNB</th><th>Healthy, untreated ACDNB</th><th>25% DCE year 3 ADCNB</th><th>50% DCE year 3 ADCNB</th><th>75% DCE year 3 ADCNB</th><th>25% DCE year 5 ADCNB</th><th>50% DCE year 5 ADCNB</th><th>75% DCE year 5 ADCNB</th><th>25% DCE year 10 ADCNB</th><th>50% DCE year 10 ADCNB</th><th>75% DCE year 10 ADCNB</th></thead><tbody>';
-
-		the_table_html += '<tr><td>Breakeven age</td><td></td><td></td>';
-		for (var i=2; i<scenarioKeys.length; i++) {
-			the_table_html += '<td>' + bea[scenarioKeys[i]] + '</td>';
-		};
-		the_table_html += '</tr>';
-
-		the_table_html += '<tr><td>Last profitable year</td><td></td><td></td>';
-		for (var i=2; i<scenarioKeys.length; i++) {
-			the_table_html += '<td>' + lpy[scenarioKeys[i]] + '</td>';
-		};
-		the_table_html += '</tr>';
-
-		the_table_html += '<tr><td>Breakeven probability</td>';
-		for (var i=0; i<scenarioKeys.length; i++) {
-			the_table_html += '<td>' + bep[scenarioKeys[i]] + '</td>';
-		};
-		the_table_html += '</tr>';
-
-		for (var k=0; k<26; k++) {
-			the_table_html += '<tr><td>' + k + '</td><td>' + untreatedCDNR[k] + '</td><td>' + healthyACDNBna[k] + '</td><td>' + acdnb25y3[k] + '</td><td>' + acdnb50y3[k] + '</td><td>' + acdnb75y3[k] + '</td><td>' + acdnb25y5[k] + '</td><td>' + acdnb50y5[k] + '</td><td>' + acdnb75y5[k] + '</td><td>' + acdnb25y10[k] + '</td><td>' + acdnb50y10[k] + '</td><td>' + acdnb75y10[k] + '</td></tr>';
-		}
 
 		the_table_html += '</tbody></table>';
 		$('.results').html(the_table_html);
