@@ -130,40 +130,16 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 			cost3			
 		];
 
-		var pcFtnOfT = [];
-		for (var l=0; l<age; l++) {
-			pcFtnOfT[l] = 0;
-		};
-		for (var l=age; l<26; l++) {
-			pcFtnOfT[l] = pc;
-		};
-
-		var healthyNR = [];
-		for (var i in healthyYields) {
-			healthyNR[i] = price*healthyYields[i]-costs[i]-pcFtnOfT[i];
-		};
-
 		var untreatedNR = [];
 		for (var i in untreatedYields) {
 			untreatedNR[i] = price*untreatedYields[i]-costs[i];
 		};	
-
-		var healthyDNR = [];
-		for (var i in healthyNR) {
-			var compoundDiscount = Math.pow(discountFactor, i);
-			healthyDNR[i] = healthyNR[i]*compoundDiscount;
-		};
 
 		var untreatedDNR = [];
 		for (var i in untreatedNR) {
 			var compoundDiscount = Math.pow(discountFactor, i);
 			untreatedDNR[i] = untreatedNR[i]*compoundDiscount;
 		};	
-
-		var healthyCDNR = [ healthyDNR[0] ];
-		for (var i=1; i<healthyDNR.length; i++) {
-			healthyCDNR[i] = healthyDNR[i] + healthyCDNR[i-1];
-		};
 
 		var untreatedCDNR = [ untreatedDNR[0] ];
 		for (var i=1; i<untreatedDNR.length; i++) {
@@ -173,7 +149,7 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  		var healthyCDNRna = [ price*healthyYields[0] - costs[0] ];
  		for (var i=1; i<healthyYields.length; i++) {
  			var compoundDiscount = Math.pow(discountFactor, i);
- 			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNR[i-1];
+ 			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[i-1];
  		};
 
  		healthyACDNBna = [];
@@ -183,7 +159,33 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 
  		for (var a=2; a<scenarioKeys.length; a++) {
 
-			var selectCol = scenarioKeys[a];
+ 			var selectCol = scenarioKeys[a];
+
+ 			var age = parseInt(selectCol.substr(3));
+
+ 			var pcFtnOfT = [];
+			for (var l=0; l<age; l++) {
+				pcFtnOfT[l] = 0;
+			};
+			for (var l=age; l<26; l++) {
+				pcFtnOfT[l] = pc;
+			};
+
+			var healthyNR = [];
+			for (var i in healthyYields) {
+				healthyNR[i] = price*healthyYields[i]-costs[i]-pcFtnOfT[i];
+			};
+
+			var healthyDNR = [];
+			for (var i in healthyNR) {
+				var compoundDiscount = Math.pow(discountFactor, i);
+				healthyDNR[i] = healthyNR[i]*compoundDiscount;
+			};
+
+			var healthyCDNR = [ healthyDNR[0] ];
+			for (var i=1; i<healthyDNR.length; i++) {
+				healthyCDNR[i] = healthyDNR[i] + healthyCDNR[i-1];
+			};
 
 			treatedYields = [];
 			for (var i in healthyYields) {
