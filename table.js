@@ -257,19 +257,13 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 	 		};
 
 	 		lpy[selectCol] = selectCol.substr(3);
-	 		console.log('outside while: ' + (parseInt(lpy[selectCol])+1));
- 			console.log(treatedNR[parseInt(lpy[selectCol])+1]);
 	 		while (treatedNR[parseInt(lpy[selectCol])+1] <= 0 && parseInt(lpy[selectCol])<25) {
-	 			console.log('inside while');
-	 			console.log(treatedNR[parseInt(lpy[selectCol])+1]);
 	 			lpy[selectCol]++;
 	 		}
 	 		if (parseInt(lpy[selectCol])==25) {
 	 			lpy[selectCol] = 'Treatment never profitable';
 	 		} else {
 		 		while (treatedNR[parseInt(lpy[selectCol])+1] > 0 && parseInt(lpy[selectCol])<25) {
-		 			console.log('inside 2nd while');
-	 				console.log(treatedNR[parseInt(lpy[selectCol])+1]);
 		 			lpy[selectCol]++;
 		 		}
 		 	}
@@ -294,8 +288,8 @@ function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, pric
 		};
 		the_table_html += '</tr>';
 
-		the_table_html += '<tr><td>Breakeven probability</td><td></td><td></td>';
-		for (var i=2; i<scenarioKeys.length; i++) {
+		the_table_html += '<tr><td>Breakeven probability</td>';
+		for (var i=0; i<scenarioKeys.length; i++) {
 			the_table_html += '<td>' + bep[scenarioKeys[i]] + '</td>';
 		};
 		the_table_html += '</tr>';
