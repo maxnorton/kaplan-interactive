@@ -157,6 +157,9 @@ fieldset, .results {
   fieldset img, .results img {
     max-width: 100%; }
 
+.results {
+  margin-left: 8px; }
+
 fieldset ul {
   list-style-type: none;
   margin-bottom: 3em; }
@@ -198,7 +201,7 @@ table.form {
     text-align: left; }
   .results table th,
   table.form th {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #ccc;
     background-color: #eee; }
   .results table tr:nth-of-type(even),
   table.form tr:nth-of-type(even) {

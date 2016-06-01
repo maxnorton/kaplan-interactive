@@ -225,6 +225,10 @@ fieldset, .results {
 
 }
 
+.results {
+	margin-left: 8px;
+}
+
 fieldset ul {
 	list-style-type: none;
 	margin-bottom: 3em;
@@ -284,7 +288,7 @@ table.form {
 	}
 
 	th {
-		border-bottom: 1px solid #666;
+		border-bottom: 1px solid #ccc;
 		background-color: #eee;
 	}
 
