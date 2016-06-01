@@ -308,9 +308,9 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 	 		if (bep[selectCol] > 1)
 	 			bep[selectCol] = 1;
 
-	 		var acdnbDisplay = (acdnb[parseInt(lpy[selectCol])] != null ) ? acdnb[parseInt(lpy[selectCol])] : '-';
+	 		var acdnbDisplay = (acdnb[parseInt(lpy[selectCol])] != null ) ? '$' + acdnb[parseInt(lpy[selectCol])].toFixed(2) : '-';
 
-			the_table_html += '<tr><td>' + scenarios[selectCol] + '</td><td>' + '$' + acdnbDisplay.toFixed(2) + '</td><td>' + bea[selectCol] + '</td><td>' + lpy[selectCol] + '</td><td>' + bep[selectCol] + '</td></tr>';
+			the_table_html += '<tr><td>' + scenarios[selectCol] + '</td><td>' + acdnbDisplay + '</td><td>' + bea[selectCol] + '</td><td>' + lpy[selectCol] + '</td><td>' + bep[selectCol] + '</td></tr>';
 
 	 	};
 
