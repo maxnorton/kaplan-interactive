@@ -3,7 +3,7 @@ var cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield
 var treatedCDNR, treatedDNR, treatedNR, treatedYields = new Array(); // outcomes
 var costs, pcFtnOfT, isProfitable = new Array(); // collation arrays
 
-function the_table(age, efficacy, discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
+function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
 	d3.tsv("yield-rates.tsv", function(data) {
 
 		var healthyACDNBna, acdnb25y3, acdnb25y5, acdnb25y10, acdnb50y3, acdnb50y5, acdnb50y10, acdnb75y3, acdnb75y5, acdnb75y10, treatedYields, treatedNR, treatedDNR, treatedCDNR, ccthv = new Array();
