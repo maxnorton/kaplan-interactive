@@ -45,21 +45,58 @@
 <p><em>Partial support for the economic analysis and this website are provided through a grant from the Specialty Crop Research Initiative (SCRI) USDA, National Institute of Food &amp; Agriculture. For more information, please visit the</em> <a href="http://treeandvinetrunkdiseases.org">SCRI Trunk Disease Project Page.</a> </p>
 </fieldset>
 
-<section class="form">
+<table class="form">
+	<tr>
+		<td><label for="price">Price</label></td>
+		<td><input type="text" name="price" id="price" value="650" /></td>
+	</tr>
+	<tr>
+		<td><label for="discount">Discount rate (%)</label></td>
+		<td><input type="text" name="discount" id="discount" value="3" /></td>
+	</tr>
+	<tr>
+		<td><label for="pc">Additional cost of preventative practice</label></td>
+		<td><input type="text" name="pc" id="pc" value="175" /></td>
+	</tr>
+	<tr>
+		<td><label for="cost0">Cultural Cost &#8211; Year 0 &#8211; Establishing Vineyard</label></td>
+		<td><input type="text" name="cost0" id="cost0" value="12213" /></td>
+	</tr>
+	<tr>
+		<td><label for="cost1">Cultural Cost &#8211; Year 1 &#8211; Establishing Vineyard</label></td>
+		<td><input type="text" name="cost1" id="cost1" value="3370" /></td>
+	</tr>
+	<tr>
+		<td><label for="cost2">Cultural Cost &#8211; Year 2 &#8211; Establishing Vineyard</label></td>
+		<td><input type="text" name="cost2" id="cost2" value="1004" /></td>
+	</tr>
+	<tr>
+		<td><label for="cost3">Cultural Cost &#8211; Year 3+ &#8211; Established Vineyard</label></td>
+		<td><input type="text" name="cost3" id="cost3" value="3505" /></td>
+	</tr>
+	<tr>
+		<td><label for="yield0">Yield0</label></td>
+		<td><input type="text" name="yield0" id="yield0" value="0" /></td>
+	</tr>
+	<tr>
+		<td><label for="yield1">Yield1</label></td>
+		<td><input type="text" name="yield1" id="yield1" value="0" /></td>
+	</tr>
+	<tr>
+		<td><label for="yield2">Yield2</label></td>
+		<td><input type="text" name="yield2" id="yield2" value="2" /></td>
+	</tr>
+	<tr>
+		<td><label for="yield3">Yield3</label></td>
+		<td><input type="text" name="yield3" id="yield3" value="4" /></td>
+	</tr>
+	<tr>
+		<td><label for="yield4">Yield4</label></td>
+		<td><input type="text" name="yield4" id="yield4" value="4" /></td>
+	</tr>
+</table>
 
-	<label for="discount">Discount rate (%)</label> <input type="text" name="discount" id="discount" value="3" /><br />
-	<label for="cost0">Cost0</label> <input type="text" name="cost0" id="cost0" value="12213" /><br />
-	<label for="cost1">Cost1</label> <input type="text" name="cost1" id="cost1" value="3370" /><br />
-	<label for="cost2">Cost2</label> <input type="text" name="cost2" id="cost2" value="1004" /><br />
-	<label for="cost3">Cost3</label> <input type="text" name="cost3" id="cost3" value="3505" /><br />
-	<label for="pc">Practice cost</label> <input type="text" name="pc" id="pc" value="175" /><br />
-	<label for="price">Price</label> <input type="text" name="price" id="price" value="650" /><br />
-	<label for="yield0">Yield0</label> <input type="text" name="yield0" id="yield0" value="0" /><br />
-	<label for="yield1">Yield1</label> <input type="text" name="yield1" id="yield1" value="0" /><br />
-	<label for="yield2">Yield2</label> <input type="text" name="yield2" id="yield2" value="2" /><br />
-	<label for="yield3">Yield3</label> <input type="text" name="yield3" id="yield3" value="4" /><br />
-	<label for="yield4">Yield4</label> <input type="text" name="yield4" id="yield4" value="4" /><br />
-	<button id="submit">Display returns to this practice</button>
+	<button id="submit">Display returns to this scenario</button>
 
 </section>
 
