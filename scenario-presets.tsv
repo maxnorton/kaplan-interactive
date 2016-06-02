@@ -1,0 +1,136 @@
+index	Region	Practice	Efficacy	Year of adoption	ACDNB	Last profitable year	Age adoption pays off	Breakeven probability
+napaDP25y3	Napa	Delayed Pruning	25.0	3.0	$46,720	18	3.0	0.0
+	Napa	Delayed Pruning	25.0	5.0	$37,880	17	5.0	0.0
+	Napa	Delayed Pruning	25.0	10.0	$16,159	16	10.0	0.0
+	Napa	Delayed Pruning	50.0	3.0	$114,680	25	3.0	0.0
+	Napa	Delayed Pruning	50.0	5.0	$96,944	24	5.0	0.0
+	Napa	Delayed Pruning	50.0	10.0	$44,205	19	10.0	0.0
+	Napa	Delayed Pruning	75.0	3.0	$155,303	25	3.0	0.0
+	Napa	Delayed Pruning	75.0	5.0	$147,388	25	5.0	0.0
+	Napa	Delayed Pruning	75.0	10.0	$89,863	25	10.0	0.0
+	Napa	Double Pruning	25.0	3.0	$46,720	18	10	0.159
+	Napa	Double Pruning	25.0	5.0	$37,880	17	9	0.173
+	Napa	Double Pruning	25.0	10.0	$16,159	15	11	0.285
+	Napa	Double Pruning	50.0	3.0	$114,680	25	9	0.065
+	Napa	Double Pruning	50.0	5.0	$96,944	24	8	0.068
+	Napa	Double Pruning	50.0	10.0	$44,205	19	10	0.104
+	Napa	Double Pruning	75.0	3.0	$155,303	25	8	0.048
+	Napa	Double Pruning	75.0	5.0	$147,388	25	8	0.044
+	Napa	Double Pruning	75.0	10.0	$89,863	25	10	0.051
+	Napa	Hand painted Topsin	25.0	3.0	$45,614	18	6	0.024
+	Napa	Hand painted Topsin	25.0	5.0	$36,903	17	6	0.026
+	Napa	Hand painted Topsin	25.0	10.0	$15,472	15	10	0.043
+	Napa	Hand painted Topsin	50.0	3.0	$113,574	25	5	0.01
+	Napa	Hand painted Topsin	50.0	5.0	$95,967	24	5	0.01
+	Napa	Hand painted Topsin	50.0	10.0	$43,517	19	10	0.016
+	Napa	Hand painted Topsin	75.0	3.0	$154,197	25	4	0.007
+	Napa	Hand painted Topsin	75.0	5.0	$146,410	25	5	0.007
+	Napa	Hand painted Topsin	75.0	10.0	$89,175	25	10	0.008
+nsjDP25y3	Northern San Joaquin	Delayed Pruning	25.0	3.0	$12,993	15	3.0	0.0
+	Northern San Joaquin	Delayed Pruning	25.0	5.0	$10,534	15	5.0	0.0
+	Northern San Joaquin	Delayed Pruning	25.0	10.0	$4,494	13	10.0	0.0
+	Northern San Joaquin	Delayed Pruning	50.0	3.0	$31,892	22	3.0	0.0
+	Northern San Joaquin	Delayed Pruning	50.0	5.0	$26,960	20	5.0	0.0
+	Northern San Joaquin	Delayed Pruning	50.0	10.0	$12,293	15	10.0	0.0
+	Northern San Joaquin	Delayed Pruning	75.0	3.0	$43,189	25	3.0	0.0
+	Northern San Joaquin	Delayed Pruning	75.0	5.0	$40,988	25	5.0	0.0
+	Northern San Joaquin	Delayed Pruning	75.0	10.0	$24,990	22	10.0	0.0
+	Northern San Joaquin	Double Pruning	25.0	3.0	$8,761	15	11	0.326
+	Northern San Joaquin	Double Pruning	25.0	5.0	$6,795	14	11	0.355
+	Northern San Joaquin	Double Pruning	25.0	10.0	$1,866	13	12	0.585
+	Northern San Joaquin	Double Pruning	50.0	3.0	$27,660	22	10	0.133
+	Northern San Joaquin	Double Pruning	50.0	5.0	$23,221	20	10	0.139
+	Northern San Joaquin	Double Pruning	50.0	10.0	$9,665	15	11	0.214
+	Northern San Joaquin	Double Pruning	75.0	3.0	$38,957	25	10	0.098
+	Northern San Joaquin	Double Pruning	75.0	5.0	$37,249	25	10	0.091
+	Northern San Joaquin	Double Pruning	75.0	10.0	$22,362	21	10	0.105
+	Northern San Joaquin	Hand painted Topsin	25.0	3.0	$11,621	15	9	0.106
+	Northern San Joaquin	Hand painted Topsin	25.0	5.0	$9,322	15	9	0.115
+	Northern San Joaquin	Hand painted Topsin	25.0	10.0	$3,642	13	10	0.19
+	Northern San Joaquin	Hand painted Topsin	50.0	3.0	$30,520	22	8	0.043
+	Northern San Joaquin	Hand painted Topsin	50.0	5.0	$25,747	20	8	0.045
+	Northern San Joaquin	Hand painted Topsin	50.0	10.0	$11,441	15	10	0.069
+	Northern San Joaquin	Hand painted Topsin	75.0	3.0	$41,817	25	7	0.032
+	Northern San Joaquin	Hand painted Topsin	75.0	5.0	$39,776	25	7	0.03
+	Northern San Joaquin	Hand painted Topsin	75.0	10.0	$24,138	22	10	0.034
+	Central Coast	Delayed Pruning	25.0	3.0	$18,929	16	3.0	0.0
+	Central Coast	Delayed Pruning	25.0	5.0	$15,349	15	5.0	0.0
+	Central Coast	Delayed Pruning	25.0	10.0	$6,548	14	10.0	0.0
+	Central Coast	Delayed Pruning	50.0	3.0	$46,464	23	3.0	0.0
+	Central Coast	Delayed Pruning	50.0	5.0	$39,281	21	5.0	0.0
+	Central Coast	Delayed Pruning	50.0	10.0	$17,912	16	10.0	0.0
+	Central Coast	Delayed Pruning	75.0	3.0	$62,923	25	3.0	0.0
+	Central Coast	Delayed Pruning	75.0	5.0	$59,721	25	5.0	0.0
+	Central Coast	Delayed Pruning	75.0	10.0	$36,412	24	10.0	0.0
+	Central Coast	Double Pruning	25.0	3.0	$13,143	16	11	0.306
+	Central Coast	Double Pruning	25.0	5.0	$10,236	15	11	0.333
+	Central Coast	Double Pruning	25.0	10.0	$2,954	13	12	0.549
+	Central Coast	Double Pruning	50.0	3.0	$40,679	23	10	0.125
+	Central Coast	Double Pruning	50.0	5.0	$34,169	21	10	0.13
+	Central Coast	Double Pruning	50.0	10.0	$14,318	16	11	0.201
+	Central Coast	Double Pruning	75.0	3.0	$57,137	25	10	0.092
+	Central Coast	Double Pruning	75.0	5.0	$54,608	25	9	0.086
+	Central Coast	Double Pruning	75.0	10.0	$32,818	23	10	0.099
+	Central Coast	Hand painted Topsin	25.0	3.0	$16,401	16	9	0.134
+	Central Coast	Hand painted Topsin	25.0	5.0	$13,116	15	9	0.146
+	Central Coast	Hand painted Topsin	25.0	10.0	$4,978	13	10	0.24
+	Central Coast	Hand painted Topsin	50.0	3.0	$43,937	23	8	0.054
+	Central Coast	Hand painted Topsin	50.0	5.0	$37,048	21	8	0.057
+	Central Coast	Hand painted Topsin	50.0	10.0	$16,342	16	10	0.088
+	Central Coast	Hand painted Topsin	75.0	3.0	$60,396	25	8	0.04
+	Central Coast	Hand painted Topsin	75.0	5.0	$57,487	25	8	0.037
+	Central Coast	Hand painted Topsin	75.0	10.0	$34,842	23	10	0.043
+	Lake	Delayed Pruning	25.0	3.0	$12,993	17	3.0	0.0
+	Lake	Delayed Pruning	25.0	5.0	$10,534	16	5.0	0.0
+	Lake	Delayed Pruning	25.0	10.0	$4,494	14	10.0	0.0
+	Lake	Delayed Pruning	50.0	3.0	$31,892	24	3.0	0.0
+	Lake	Delayed Pruning	50.0	5.0	$26,960	22	5.0	0.0
+	Lake	Delayed Pruning	50.0	10.0	$12,293	17	10.0	0.0
+	Lake	Delayed Pruning	75.0	3.0	$43,189	25	3.0	0.0
+	Lake	Delayed Pruning	75.0	5.0	$40,988	25	5.0	0.0
+	Lake	Delayed Pruning	75.0	10.0	$24,990	25	10.0	0.0
+	Lake	Double Pruning	25.0	3.0	$8,761	16	10	0.234
+	Lake	Double Pruning	25.0	5.0	$6,795	16	10	0.255
+	Lake	Double Pruning	25.0	10.0	$1,866	14	11	0.421
+	Lake	Double Pruning	50.0	3.0	$27,660	24	10	0.095
+	Lake	Double Pruning	50.0	5.0	$23,221	22	9	0.1
+	Lake	Double Pruning	50.0	10.0	$9,665	17	10	0.154
+	Lake	Double Pruning	75.0	3.0	$38,957	25	9	0.071
+	Lake	Double Pruning	75.0	5.0	$37,249	25	9	0.066
+	Lake	Double Pruning	75.0	10.0	$22,362	25	10	0.076
+	Lake	Hand painted Topsin	25.0	3.0	$11,621	17	7	0.047
+	Lake	Hand painted Topsin	25.0	5.0	$9,322	16	7	0.051
+	Lake	Hand painted Topsin	25.0	10.0	$3,642	14	10	0.084
+	Lake	Hand painted Topsin	50.0	3.0	$30,520	24	6	0.019
+	Lake	Hand painted Topsin	50.0	5.0	$25,747	22	6	0.02
+	Lake	Hand painted Topsin	50.0	10.0	$11,441	17	10	0.031
+	Lake	Hand painted Topsin	75.0	3.0	$41,817	25	6	0.014
+	Lake	Hand painted Topsin	75.0	5.0	$39,776	25	6	0.013
+	Lake	Hand painted Topsin	75.0	10.0	$24,138	25	10	0.015
+	Sonoma	Delayed Pruning	25.0	3.0	$23,539	16	3.0	0.0
+	Sonoma	Delayed Pruning	25.0	5.0	$19,087	15	5.0	0.0
+	Sonoma	Delayed Pruning	25.0	10.0	$8,142	13	10.0	0.0
+	Sonoma	Delayed Pruning	50.0	3.0	$57,781	22	3.0	0.0
+	Sonoma	Delayed Pruning	50.0	5.0	$48,848	21	5.0	0.0
+	Sonoma	Delayed Pruning	50.0	10.0	$22,274	16	10.0	0.0
+	Sonoma	Delayed Pruning	75.0	3.0	$78,248	25	3.0	0.0
+	Sonoma	Delayed Pruning	75.0	5.0	$74,265	25	5.0	0.0
+	Sonoma	Delayed Pruning	75.0	10.0	$45,280	23	10.0	0.0
+	Sonoma	Double Pruning	25.0	3.0	$18,347	15	10	0.221
+	Sonoma	Double Pruning	25.0	5.0	$14,499	15	10	0.24
+	Sonoma	Double Pruning	25.0	10.0	$4,917	13	11	0.396
+	Sonoma	Double Pruning	50.0	3.0	$52,588	22	9	0.09
+	Sonoma	Double Pruning	50.0	5.0	$44,260	20	9	0.094
+	Sonoma	Double Pruning	50.0	10.0	$19,049	15	10	0.145
+	Sonoma	Double Pruning	75.0	3.0	$73,056	25	9	0.066
+	Sonoma	Double Pruning	75.0	5.0	$69,677	25	9	0.062
+	Sonoma	Double Pruning	75.0	10.0	$42,055	22	10	0.071
+	Sonoma	Hand painted Topsin	25.0	3.0	$22,388	15	7	0.049
+	Sonoma	Hand painted Topsin	25.0	5.0	$18,070	15	7	0.053
+	Sonoma	Hand painted Topsin	25.0	10.0	$7,427	13	10	0.088
+	Sonoma	Hand painted Topsin	50.0	3.0	$56,630	22	6	0.02
+	Sonoma	Hand painted Topsin	50.0	5.0	$47,831	20	6	0.021
+	Sonoma	Hand painted Topsin	50.0	10.0	$21,559	15	10	0.032
+	Sonoma	Hand painted Topsin	75.0	3.0	$77,097	25	6	0.015
+	Sonoma	Hand painted Topsin	75.0	5.0	$73,248	25	6	0.014
+	Sonoma	Hand painted Topsin	75.0	10.0	$44,565	22	10	0.016
