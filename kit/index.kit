@@ -277,7 +277,7 @@ $(document).ready(function() {
 					var fig = [];
 					for (var j=0; j<efficacyOrYearlength; j++) {
 						efficacyOrYearfig[j] = $('input[name=' + efficacyOrYearchoice + ']:checked:eq('+j+')').val();
-						fig[j] =  '<a href="images/figures/' + $('select[name=region]').val().toUpperCase() + '-' + 'Yield' + efficacyOrYearfig[j] + '.png" class="swipebox"><img src="images/figures/' + $('select[name=region]').val().toUpperCase() + '-' + 'Yield' + efficacyOrYearfig[j] + '.png" style="width: 910px;" alt="Graphical result" /></a>'
+						fig[j] =  '<a href="img/figures/' + $('select[name=region]').val().toUpperCase() + '-' + 'Yield' + efficacyOrYearfig[j] + '.png" class="swipebox"><img src="img/figures/' + $('select[name=region]').val().toUpperCase() + '-' + 'Yield' + efficacyOrYearfig[j] + '.png" style="width: 910px;" alt="Graphical result" /></a>'
 						fullfig += fig[j];
 					}
 					break;
@@ -289,7 +289,7 @@ $(document).ready(function() {
 						practicefig[i] = $('input[name=practicefig]:checked:eq('+i+')').val();
 						for (var j=0; j<efficacyOrYearlength; j++) {
 							efficacyOrYearfig[j] = $('input[name=' + efficacyOrYearchoice + ']:checked:eq('+j+')').val();
-							fig[i*$('input[name=practicefig]:checked').length+j] =  '<a href="images/figures/' + $('select[name=region]').val().toUpperCase() + '-' + practicefig[i].toUpperCase() + efficacyOrYearfig[j] + '.png" class="swipebox"><img src="images/figures/' + $('select[name=region]').val().toUpperCase() + '-' + practicefig[i].toUpperCase() + efficacyOrYearfig[j] + '.png" style="width: 910px;" alt="Graphical result" /></a>'
+							fig[i*$('input[name=practicefig]:checked').length+j] =  '<a href="img/figures/' + $('select[name=region]').val().toUpperCase() + '-' + practicefig[i].toUpperCase() + efficacyOrYearfig[j] + '.png" class="swipebox"><img src="img/figures/' + $('select[name=region]').val().toUpperCase() + '-' + practicefig[i].toUpperCase() + efficacyOrYearfig[j] + '.png" style="width: 910px;" alt="Graphical result" /></a>'
 							fullfig += fig[i*$('input[name=practicefig]:checked').length+j];
 						}
 					}

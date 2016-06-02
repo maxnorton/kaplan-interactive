@@ -56,1487 +56,1454 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/efficacy-table01.png": {
+	"\/img\/efficacy-table01.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 120642,
-		"inputAbbreviatedPath": "\/images\/efficacy-table01.png",
-		"outputAbbreviatedPath": "\/images\/efficacy-table01.png",
+		"inputAbbreviatedPath": "\/img\/efficacy-table01.png",
+		"outputAbbreviatedPath": "\/img\/efficacy-table01.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DBP25.png": {
+	"\/img\/figures\/CC-DBP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DBP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DBP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DBP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DBP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DBP50.png": {
+	"\/img\/figures\/CC-DBP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DBP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DBP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DBP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DBP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DBP75.png": {
+	"\/img\/figures\/CC-DBP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DBP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DBP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DBP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DBP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DBPYear10.png": {
+	"\/img\/figures\/CC-DBPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DBPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DBPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DBPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DBPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DBPYear3.png": {
+	"\/img\/figures\/CC-DBPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DBPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DBPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DBPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DBPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DBPYear5.png": {
+	"\/img\/figures\/CC-DBPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DBPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DBPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DBPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DBPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DP25.png": {
+	"\/img\/figures\/CC-DP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DP50.png": {
+	"\/img\/figures\/CC-DP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DP75.png": {
+	"\/img\/figures\/CC-DP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DPYear10.png": {
+	"\/img\/figures\/CC-DPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DPYear3.png": {
+	"\/img\/figures\/CC-DPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-DPYear5.png": {
+	"\/img\/figures\/CC-DPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-DPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-DPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-DPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-DPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-HP25.png": {
+	"\/img\/figures\/CC-HP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-HP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-HP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-HP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-HP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-HP50.png": {
+	"\/img\/figures\/CC-HP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-HP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-HP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-HP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-HP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-HP75.png": {
+	"\/img\/figures\/CC-HP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-HP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-HP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-HP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-HP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-HPYear10.png": {
+	"\/img\/figures\/CC-HPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-HPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-HPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-HPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-HPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-HPYear3.png": {
+	"\/img\/figures\/CC-HPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-HPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-HPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-HPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-HPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-HPYear5.png": {
+	"\/img\/figures\/CC-HPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-HPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-HPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-HPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-HPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-Yield25.png": {
+	"\/img\/figures\/CC-Yield25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-Yield25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-Yield25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-Yield25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-Yield25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-Yield50.png": {
+	"\/img\/figures\/CC-Yield50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-Yield50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-Yield50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-Yield50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-Yield50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-Yield75.png": {
+	"\/img\/figures\/CC-Yield75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-Yield75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-Yield75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-Yield75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-Yield75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-YieldYear10.png": {
+	"\/img\/figures\/CC-YieldYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-YieldYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-YieldYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-YieldYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-YieldYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-YieldYear3.png": {
+	"\/img\/figures\/CC-YieldYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-YieldYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-YieldYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-YieldYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-YieldYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/CC-YieldYear5.png": {
+	"\/img\/figures\/CC-YieldYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/CC-YieldYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/CC-YieldYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/CC-YieldYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/CC-YieldYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DBP25.png": {
+	"\/img\/figures\/LAKE-DBP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DBP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DBP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DBP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DBP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DBP50.png": {
+	"\/img\/figures\/LAKE-DBP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DBP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DBP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DBP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DBP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DBP75.png": {
+	"\/img\/figures\/LAKE-DBP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DBP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DBP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DBP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DBP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DBPYear10.png": {
+	"\/img\/figures\/LAKE-DBPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DBPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DBPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DBPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DBPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DBPYear3.png": {
+	"\/img\/figures\/LAKE-DBPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DBPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DBPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DBPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DBPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DBPYear5.png": {
+	"\/img\/figures\/LAKE-DBPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DBPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DBPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DBPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DBPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DP25.png": {
+	"\/img\/figures\/LAKE-DP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DP50.png": {
+	"\/img\/figures\/LAKE-DP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DP75.png": {
+	"\/img\/figures\/LAKE-DP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DPYear10.png": {
+	"\/img\/figures\/LAKE-DPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DPYear3.png": {
+	"\/img\/figures\/LAKE-DPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-DPYear5.png": {
+	"\/img\/figures\/LAKE-DPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-DPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-DPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-DPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-DPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-HP25.png": {
+	"\/img\/figures\/LAKE-HP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-HP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-HP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-HP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-HP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-HP50.png": {
+	"\/img\/figures\/LAKE-HP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-HP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-HP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-HP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-HP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-HP75.png": {
+	"\/img\/figures\/LAKE-HP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-HP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-HP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-HP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-HP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-HPYear10.png": {
+	"\/img\/figures\/LAKE-HPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-HPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-HPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-HPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-HPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-HPYear3.png": {
+	"\/img\/figures\/LAKE-HPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-HPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-HPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-HPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-HPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-HPYear5.png": {
+	"\/img\/figures\/LAKE-HPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-HPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-HPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-HPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-HPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-Yield25.png": {
+	"\/img\/figures\/LAKE-Yield25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-Yield25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-Yield25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-Yield25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-Yield25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-Yield50.png": {
+	"\/img\/figures\/LAKE-Yield50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-Yield50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-Yield50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-Yield50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-Yield50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-Yield75.png": {
+	"\/img\/figures\/LAKE-Yield75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-Yield75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-Yield75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-Yield75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-Yield75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-YieldYear10.png": {
+	"\/img\/figures\/LAKE-YieldYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-YieldYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-YieldYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-YieldYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-YieldYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-YieldYear3.png": {
+	"\/img\/figures\/LAKE-YieldYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-YieldYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-YieldYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-YieldYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-YieldYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/LAKE-YieldYear5.png": {
+	"\/img\/figures\/LAKE-YieldYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/LAKE-YieldYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/LAKE-YieldYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/LAKE-YieldYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/LAKE-YieldYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DBP25.png": {
+	"\/img\/figures\/NAPA-DBP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DBP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DBP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DBP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DBP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DBP50.png": {
+	"\/img\/figures\/NAPA-DBP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DBP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DBP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DBP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DBP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DBP75.png": {
+	"\/img\/figures\/NAPA-DBP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DBP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DBP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DBP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DBP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DBPYear10.png": {
+	"\/img\/figures\/NAPA-DBPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DBPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DBPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DBPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DBPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DBPYear3.png": {
+	"\/img\/figures\/NAPA-DBPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DBPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DBPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DBPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DBPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DBPYear5.png": {
+	"\/img\/figures\/NAPA-DBPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DBPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DBPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DBPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DBPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DP25.png": {
+	"\/img\/figures\/NAPA-DP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DP50.png": {
+	"\/img\/figures\/NAPA-DP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DP75.png": {
+	"\/img\/figures\/NAPA-DP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DPYear10.png": {
+	"\/img\/figures\/NAPA-DPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DPYear3.png": {
+	"\/img\/figures\/NAPA-DPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-DPYear5.png": {
+	"\/img\/figures\/NAPA-DPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-DPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-DPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-DPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-DPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-HP25.png": {
+	"\/img\/figures\/NAPA-HP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-HP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-HP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-HP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-HP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-HP50.png": {
+	"\/img\/figures\/NAPA-HP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-HP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-HP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-HP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-HP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-HP75.png": {
+	"\/img\/figures\/NAPA-HP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-HP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-HP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-HP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-HP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-HPYear10.png": {
+	"\/img\/figures\/NAPA-HPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-HPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-HPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-HPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-HPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-HPYear3.png": {
+	"\/img\/figures\/NAPA-HPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-HPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-HPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-HPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-HPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-HPYear5.png": {
+	"\/img\/figures\/NAPA-HPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-HPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-HPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-HPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-HPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-Yield25.png": {
+	"\/img\/figures\/NAPA-Yield25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-Yield25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-Yield25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-Yield25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-Yield25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-Yield50.png": {
+	"\/img\/figures\/NAPA-Yield50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-Yield50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-Yield50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-Yield50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-Yield50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-Yield75.png": {
+	"\/img\/figures\/NAPA-Yield75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-Yield75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-Yield75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-Yield75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-Yield75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-YieldYear10.png": {
+	"\/img\/figures\/NAPA-YieldYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-YieldYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-YieldYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-YieldYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-YieldYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-YieldYear3.png": {
+	"\/img\/figures\/NAPA-YieldYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-YieldYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-YieldYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-YieldYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-YieldYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NAPA-YieldYear5.png": {
+	"\/img\/figures\/NAPA-YieldYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/NAPA-YieldYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NAPA-YieldYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NAPA-YieldYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NAPA-YieldYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DBP25.png": {
+	"\/img\/figures\/NSJ-DBP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 87981,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DBP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DBP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DBP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DBP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DBP50.png": {
+	"\/img\/figures\/NSJ-DBP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 85552,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DBP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DBP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DBP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DBP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DBP75.png": {
+	"\/img\/figures\/NSJ-DBP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 84234,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DBP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DBP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DBP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DBP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DBPYear10.png": {
+	"\/img\/figures\/NSJ-DBPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 39761,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DBPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DBPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DBPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DBPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DBPYear3.png": {
+	"\/img\/figures\/NSJ-DBPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 44437,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DBPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DBPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DBPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DBPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DBPYear5.png": {
+	"\/img\/figures\/NSJ-DBPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 42704,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DBPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DBPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DBPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DBPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DP25.png": {
+	"\/img\/figures\/NSJ-DP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 89117,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DP50.png": {
+	"\/img\/figures\/NSJ-DP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 85442,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DP75.png": {
+	"\/img\/figures\/NSJ-DP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 87041,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DPYear10.png": {
+	"\/img\/figures\/NSJ-DPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 39436,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DPYear3.png": {
+	"\/img\/figures\/NSJ-DPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 41782,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-DPYear5.png": {
+	"\/img\/figures\/NSJ-DPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 42745,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-DPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-DPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-DPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-DPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-HP25.png": {
+	"\/img\/figures\/NSJ-HP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 87601,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-HP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-HP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-HP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-HP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-HP50.png": {
+	"\/img\/figures\/NSJ-HP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 86454,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-HP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-HP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-HP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-HP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-HP75.png": {
+	"\/img\/figures\/NSJ-HP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 85415,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-HP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-HP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-HP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-HP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-HPYear10.png": {
+	"\/img\/figures\/NSJ-HPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 39704,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-HPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-HPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-HPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-HPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-HPYear3.png": {
+	"\/img\/figures\/NSJ-HPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 42772,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-HPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-HPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-HPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-HPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-HPYear5.png": {
+	"\/img\/figures\/NSJ-HPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43049,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-HPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-HPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-HPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-HPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-Yield25.png": {
+	"\/img\/figures\/NSJ-Yield25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 106003,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-Yield25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-Yield25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-Yield25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-Yield25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-Yield25DCE.png": {
+	"\/img\/figures\/NSJ-Yield25DCE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 106003,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-Yield25DCE.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-Yield25DCE.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-Yield25DCE.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-Yield25DCE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-Yield50.png": {
+	"\/img\/figures\/NSJ-Yield50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 102441,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-Yield50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-Yield50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-Yield50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-Yield50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-Yield50DCE.png": {
+	"\/img\/figures\/NSJ-Yield50DCE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 102441,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-Yield50DCE.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-Yield50DCE.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-Yield50DCE.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-Yield50DCE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-Yield75.png": {
+	"\/img\/figures\/NSJ-Yield75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 88937,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-Yield75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-Yield75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-Yield75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-Yield75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-Yield75DCE.png": {
+	"\/img\/figures\/NSJ-Yield75DCE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 88937,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-Yield75DCE.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-Yield75DCE.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-Yield75DCE.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-Yield75DCE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-YieldYear10.png": {
+	"\/img\/figures\/NSJ-YieldYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 48845,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-YieldYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-YieldYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-YieldYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-YieldYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-YieldYear3.png": {
+	"\/img\/figures\/NSJ-YieldYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47237,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-YieldYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-YieldYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-YieldYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-YieldYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/NSJ-YieldYear5.png": {
+	"\/img\/figures\/NSJ-YieldYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47513,
-		"inputAbbreviatedPath": "\/images\/figures\/NSJ-YieldYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/NSJ-YieldYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/NSJ-YieldYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/NSJ-YieldYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DBP25.png": {
+	"\/img\/figures\/SONOMA-DBP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 49039,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DBP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DBP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DBP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DBP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DBP50.png": {
+	"\/img\/figures\/SONOMA-DBP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43329,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DBP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DBP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DBP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DBP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DBP75.png": {
+	"\/img\/figures\/SONOMA-DBP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 48038,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DBP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DBP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DBP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DBP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DBPYear10.png": {
+	"\/img\/figures\/SONOMA-DBPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 42956,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DBPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DBPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DBPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DBPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DBPYear3.png": {
+	"\/img\/figures\/SONOMA-DBPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47980,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DBPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DBPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DBPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DBPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DBPYear5.png": {
+	"\/img\/figures\/SONOMA-DBPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 45989,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DBPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DBPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DBPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DBPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DP25.png": {
+	"\/img\/figures\/SONOMA-DP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 44511,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DP50.png": {
+	"\/img\/figures\/SONOMA-DP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43836,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DP75.png": {
+	"\/img\/figures\/SONOMA-DP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 45570,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DPYear10.png": {
+	"\/img\/figures\/SONOMA-DPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 42993,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DPYear3.png": {
+	"\/img\/figures\/SONOMA-DPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46609,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-DPYear5.png": {
+	"\/img\/figures\/SONOMA-DPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46792,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-DPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-DPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-DPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-DPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-HP25.png": {
+	"\/img\/figures\/SONOMA-HP25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43320,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-HP25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-HP25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-HP25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-HP25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-HP50.png": {
+	"\/img\/figures\/SONOMA-HP50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43857,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-HP50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-HP50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-HP50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-HP50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-HP75.png": {
+	"\/img\/figures\/SONOMA-HP75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 49057,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-HP75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-HP75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-HP75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-HP75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-HPYear10.png": {
+	"\/img\/figures\/SONOMA-HPYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43177,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-HPYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-HPYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-HPYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-HPYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-HPYear3.png": {
+	"\/img\/figures\/SONOMA-HPYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47129,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-HPYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-HPYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-HPYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-HPYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-HPYear5.png": {
+	"\/img\/figures\/SONOMA-HPYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46416,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-HPYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-HPYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-HPYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-HPYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-Yield25.png": {
+	"\/img\/figures\/SONOMA-Yield25.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 50198,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield25.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield25.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield25.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield25.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-Yield25DCE.png": {
+	"\/img\/figures\/SONOMA-Yield25DCE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield25DCE.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield25DCE.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield25DCE.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield25DCE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-Yield50.png": {
+	"\/img\/figures\/SONOMA-Yield50.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47402,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield50.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield50.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield50.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield50.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-Yield50DCE.png": {
+	"\/img\/figures\/SONOMA-Yield50DCE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield50DCE.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield50DCE.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield50DCE.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield50DCE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-Yield75.png": {
+	"\/img\/figures\/SONOMA-Yield75.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 39385,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield75.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield75.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield75.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield75.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-Yield75DCE.png": {
+	"\/img\/figures\/SONOMA-Yield75DCE.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield75DCE.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-Yield75DCE.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield75DCE.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-Yield75DCE.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-YieldYear10.png": {
+	"\/img\/figures\/SONOMA-YieldYear10.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 48321,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-YieldYear10.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-YieldYear10.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-YieldYear10.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-YieldYear10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-YieldYear3.png": {
+	"\/img\/figures\/SONOMA-YieldYear3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46264,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-YieldYear3.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-YieldYear3.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-YieldYear3.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-YieldYear3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/figures\/SONOMA-YieldYear5.png": {
+	"\/img\/figures\/SONOMA-YieldYear5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47453,
-		"inputAbbreviatedPath": "\/images\/figures\/SONOMA-YieldYear5.png",
-		"outputAbbreviatedPath": "\/images\/figures\/SONOMA-YieldYear5.png",
+		"inputAbbreviatedPath": "\/img\/figures\/SONOMA-YieldYear5.png",
+		"outputAbbreviatedPath": "\/img\/figures\/SONOMA-YieldYear5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/header-photo-center.jpg": {
+	"\/img\/header-photo-center.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 12566,
-		"inputAbbreviatedPath": "\/images\/header-photo-center.jpg",
-		"outputAbbreviatedPath": "\/images\/header-photo-center.jpg",
+		"initialSize": 12228,
+		"inputAbbreviatedPath": "\/img\/header-photo-center.jpg",
+		"outputAbbreviatedPath": "\/img\/header-photo-center.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/header-photo-extended01.jpg": {
+	"\/img\/header-photo-extended01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 12774,
-		"inputAbbreviatedPath": "\/images\/header-photo-extended01.jpg",
-		"outputAbbreviatedPath": "\/images\/header-photo-extended01.jpg",
+		"initialSize": 11866,
+		"inputAbbreviatedPath": "\/img\/header-photo-extended01.jpg",
+		"outputAbbreviatedPath": "\/img\/header-photo-extended01.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/header-photo-extended02.jpg": {
+	"\/img\/header-photo-extended02.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 12874,
-		"inputAbbreviatedPath": "\/images\/header-photo-extended02.jpg",
-		"outputAbbreviatedPath": "\/images\/header-photo-extended02.jpg",
+		"initialSize": 12694,
+		"inputAbbreviatedPath": "\/img\/header-photo-extended02.jpg",
+		"outputAbbreviatedPath": "\/img\/header-photo-extended02.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/header-photo-extended03.jpg": {
+	"\/img\/header-photo-extended03.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 13870,
-		"inputAbbreviatedPath": "\/images\/header-photo-extended03.jpg",
-		"outputAbbreviatedPath": "\/images\/header-photo-extended03.jpg",
+		"initialSize": 13658,
+		"inputAbbreviatedPath": "\/img\/header-photo-extended03.jpg",
+		"outputAbbreviatedPath": "\/img\/header-photo-extended03.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/header-photo-right.jpg": {
+	"\/img\/header-photo-right.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 11288,
-		"inputAbbreviatedPath": "\/images\/header-photo-right.jpg",
-		"outputAbbreviatedPath": "\/images\/header-photo-right.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/variable-table01.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 46604,
-		"inputAbbreviatedPath": "\/images\/variable-table01.png",
-		"outputAbbreviatedPath": "\/images\/variable-table01.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/variable-table02.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 28048,
-		"inputAbbreviatedPath": "\/images\/variable-table02.png",
-		"outputAbbreviatedPath": "\/images\/variable-table02.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/variable-table03.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 78186,
-		"inputAbbreviatedPath": "\/images\/variable-table03.png",
-		"outputAbbreviatedPath": "\/images\/variable-table03.png",
+		"inputAbbreviatedPath": "\/img\/header-photo-right.jpg",
+		"outputAbbreviatedPath": "\/img\/header-photo-right.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1548,6 +1515,39 @@
 		"initialSize": 729,
 		"inputAbbreviatedPath": "\/img\/icons.png",
 		"outputAbbreviatedPath": "\/img\/icons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/variable-table01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46432,
+		"inputAbbreviatedPath": "\/img\/variable-table01.png",
+		"outputAbbreviatedPath": "\/img\/variable-table01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/variable-table02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28048,
+		"inputAbbreviatedPath": "\/img\/variable-table02.png",
+		"outputAbbreviatedPath": "\/img\/variable-table02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/variable-table03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78186,
+		"inputAbbreviatedPath": "\/img\/variable-table03.png",
+		"outputAbbreviatedPath": "\/img\/variable-table03.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
