@@ -69,7 +69,6 @@ h1.title a {
 .glossary-link {
   color: black;
   display: block;
-  x-font-size: 0.9em;
   padding: 0; }
   .glossary-inline i,
   .glossary-link i {
@@ -175,15 +174,6 @@ fieldset ul {
 @media only screen and (max-width: 1023px) {
   .results img {
     min-width: 50% !important; } }
-/* $logo */
-x.class-with-hyphens-separating-words {
-  property: rule;
-  x-property: disabled;
-  property: testing;
-  /* alphabetize properties, comment when necessary */ }
-  x.class-with-hyphens-separating-words .sub-selector {
-    property: rule; }
-
 /* SECONDARY LAYOUT
 ------------------------------ */
 .results table,

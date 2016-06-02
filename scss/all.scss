@@ -98,7 +98,6 @@ h1.title a {
 .glossary-link {
 	color: black;
 	display: block;
-	x-font-size: 0.9em;
 	padding: 0;
 
 	i {
@@ -251,20 +250,6 @@ fieldset ul {
 	.results img {
 		min-width: 50% !important;
 	}
-}
-
-
-/* $logo */
-x.class-with-hyphens-separating-words {
-	property: rule;
-	x-property: disabled;
-		property: testing;
-	/* alphabetize properties, comment when necessary */
-	
-	.sub-selector {
-		property: rule;
-	}
-	
 }
 
 
