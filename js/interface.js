@@ -1,17 +1,37 @@
-function styleGlossaryLinks() {
-	$('.glossary-link').prepend('<i class="fa fa-question-circle"></i>');
-	$('.glossary-inline-link').click( function(event) {
-		event.preventDefault();
-		$(this).stop().siblings('.glossary-inline').toggle('fast');
-	});
-}
-
 function getGenstates() {
 	var genstates = { 
 		'figurestate' : document.getElementById('figuregen').checked,
 		'tablestate' : document.getElementById('tablegen').checked
 	}
 	return genstates;
+}
+
+function mobileSubstitutions() {
+	if ($(window).width() < 1023) {
+		$('.efficacy-info .table-style').html('<a href="img/efficacy-table01.png" class="swipebox"><i class="fa fa-table" aria-hidden="true"></i> Open reference table');
+		$('.variable-definitions table:nth-of-type(3)').html('<a href="img/variable-table03.png" class="swipebox"><i class="fa fa-table" aria-hidden="true"></i> Open reference table').css('border', '0 none');
+		$('.hide-for-tablets').css('display', 'none');
+	}
+	if ($(window).width() < 768) {
+		$('.variable-definitions table:nth-of-type(1)').html('<a href="img/variable-table01.png" class="swipebox"><i class="fa fa-table" aria-hidden="true"></i> Open reference table').css('border', '0 none');
+		$('.variable-definitions table:nth-of-type(2)').html('<a href="img/variable-table02.png" class="swipebox"><i class="fa fa-table" aria-hidden="true"></i> Open reference table').css('border', '0 none');
+		$('.hide-for-phones').css('display', 'none');
+	}
+}
+
+function scrollToHash() {
+	if (window.location.hash) {
+		var hash = window.location.hash;
+		$('body,html').stop(true,true).animate({scrollTop: $(hash).offset().top - $('header').height()}, '500', 'swing');
+	};
+}
+
+function styleGlossaryLinks() {
+	$('.glossary-link').prepend('<i class="fa fa-question-circle"></i>');
+	$('.glossary-inline-link').click( function(event) {
+		event.preventDefault();
+		$(this).stop().siblings('.glossary-inline').toggle('fast');
+	});
 }
 
 function toggleFormOptions() {
