@@ -164,7 +164,11 @@ function applySubmitFunction(genstates) {
 							if (data[i]['index']==theFormDrivenOutputVarName)
 								thisIndex = i;							
 						}
-						theFormDrivenOutputVarsArray[a] = data[thisIndex];
+						theFormDrivenOutputVarsArray[a] = $.map(data[thisIndex], function(val, key) { return val; }).slice(1);
+						/*for (var i in data[thisIndex]) {
+							theFormDrivenOutputVarsArray[a][i] = data[thisIndex][i][1];
+						}*/
+						console.log(theFormDrivenOutputVarsArray[a]);
 						a++;
 					});
 				});
