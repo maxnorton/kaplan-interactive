@@ -55,79 +55,6 @@ function applySubmitFunction(genstates) {
 		/***** Generate table
 		------------------------------------ */
 		d3.tsv("scenario-presets.tsv", function(data) {
-																										
-			/*var ccDP25 = [ccDP25y3, ccDP25y5, ccDP25y10];									
-			var ccDP50 = [ccDP50y3, ccDP50y5, ccDP50y10];									
-			var ccDP75 = [ccDP75y3, ccDP75y5, ccDP75y10];									
-			var ccHP25 = [ccHP25y3, ccHP25y5, ccHP25y10];									
-			var ccHP50 = [ccHP50y3, ccHP50y5, ccHP50y10];					
-			var ccHP75 = [ccHP75y3, ccHP75y5, ccHP75y10];					
-			var ccDBP25 = [ccDBP25y3, ccDBP25y5, ccDBP25y10];					
-			var ccDBP50 = [ccDBP50y3, ccDBP50y5, ccDBP50y10];				
-			var ccDBP75 = [ccDBP75y3, ccDBP75y5, ccDBP75y10];				
-			var ccDP = [ccDP25, ccDP50, ccDP75];
-			var ccHP = [ccHP25, ccHP50, ccHP75];
-			var ccDBP = [ccDBP25, ccDBP50, ccDBP75];
-			var cc = [ccDP, ccHP, ccDBP];
-			
-			var sonomaDP25 = [sonomaDP25y3, sonomaDP25y5, sonomaDP25y10];
-			var sonomaDP50 = [sonomaDP50y3, sonomaDP50y5, sonomaDP50y10];
-			var sonomaDP75 = [sonomaDP75y3, sonomaDP75y5, sonomaDP75y10];
-			var sonomaHP25 = [sonomaHP25y3, sonomaHP25y5, sonomaHP25y10];
-			var sonomaHP50 = [sonomaHP50y3, sonomaHP50y5, sonomaHP50y10];
-			var sonomaHP75 = [sonomaHP75y3, sonomaHP75y5, sonomaHP75y10];
-			var sonomaDBP25 = [sonomaDBP25y3, sonomaDBP25y5, sonomaDBP25y10];
-			var sonomaDBP50 = [sonomaDBP50y3, sonomaDBP50y5, sonomaDBP50y10];
-			var sonomaDBP75 = [sonomaDBP75y3, sonomaDBP75y5, sonomaDBP75y10];
-			var sonomaDP = [sonomaDP25, sonomaDP50, sonomaDP75];
-			var sonomaHP = [sonomaHP25, sonomaHP50, sonomaHP75];
-			var sonomaDBP = [sonomaDBP25, sonomaDBP50, sonomaDBP75];
-			var sonoma = [sonomaDP, sonomaHP, sonomaDBP];
-			
-			var lakeDP25 = [lakeDP25y3, lakeDP25y5, lakeDP25y10];
-			var lakeDP50 = [lakeDP50y3, lakeDP50y5, lakeDP50y10];
-			var lakeDP75 = [lakeDP75y3, lakeDP75y5, lakeDP75y10];
-			var lakeHP25 = [lakeHP25y3, lakeHP25y5, lakeHP25y10];
-			var lakeHP50 = [lakeHP50y3, lakeHP50y5, lakeHP50y10];
-			var lakeHP75 = [lakeHP75y3, lakeHP75y5, lakeHP75y10];
-			var lakeDBP25 = [lakeDBP25y3, lakeDBP25y5, lakeDBP25y10];
-			var lakeDBP50 = [lakeDBP50y3, lakeDBP50y5, lakeDBP50y10];
-			var lakeDBP75 = [lakeDBP75y3, lakeDBP75y5, lakeDBP75y10];
-			var lakeDP = [lakeDP25, lakeDP50, lakeDP75];
-			var lakeHP = [lakeHP25, lakeHP50, lakeHP75];
-			var lakeDBP = [lakeDBP25, lakeDBP50, lakeDBP75];
-			var lake = [lakeDP, lakeHP, lakeDBP];
-			
-			var nsjDP25 = [nsjDP25y3, nsjDP25y5, nsjDP25y10];
-			var nsjDP50 = [nsjDP50y3, nsjDP50y5, nsjDP50y10];
-			var nsjDP75 = [nsjDP75y3, nsjDP75y5, nsjDP75y10];
-			var nsjHP25 = [nsjHP25y3, nsjHP25y5, nsjHP25y10];
-			var nsjHP50 = [nsjHP50y3, nsjHP50y5, nsjHP50y10];
-			var nsjHP75 = [nsjHP75y3, nsjHP75y5, nsjHP75y10];
-			var nsjDBP25 = [nsjDBP25y3, nsjDBP25y5, nsjDBP25y10];
-			var nsjDBP50 = [nsjDBP50y3, nsjDBP50y5, nsjDBP50y10];
-			var nsjDBP75 = [nsjDBP75y3, nsjDBP75y5, nsjDBP75y10];
-			var nsjDP = [nsjDP25, nsjDP50, nsjDP75];
-			var nsjHP = [nsjHP25, nsjHP50, nsjHP75];
-			var nsjDBP = [nsjDBP25, nsjDBP50, nsjDBP75];
-			var nsj = [nsjDP, nsjHP, nsjDBP];
-			
-			var napaDP25 = [napaDP25y3, napaDP25y5, napaDP25y10];
-			var napaDP50 = [napaDP50y3, napaDP50y5, napaDP50y10];
-			var napaDP75 = [napaDP75y3, napaDP75y5, napaDP75y10];
-			var napaHP25 = [napaHP25y3, napaHP25y5, napaHP25y10];
-			var napaHP50 = [napaHP50y3, napaHP50y5, napaHP50y10];
-			var napaHP75 = [napaHP75y3, napaHP75y5, napaHP75y10];
-			var napaDBP25 = [napaDBP25y3, napaDBP25y5, napaDBP25y10];
-			var napaDBP50 = [napaDBP50y3, napaDBP50y5, napaDBP50y10];
-			var napaDBP75 = [napaDBP75y3, napaDBP75y5, napaDBP75y10];
-			var napaDP = [napaDP25, napaDP50, napaDP75];
-			var napaHP = [napaHP25, napaHP50, napaHP75];
-			var napaDBP = [napaDBP25, napaDBP50, napaDBP75];
-			var napa = [napaDP, napaHP, napaDBP];
-			
-			var regions = [cc, sonoma, lake, nsj, napa];
-			// /table data declaration*/
 
 			var tableparams = [];
 			var inputs = [];
@@ -146,8 +73,6 @@ function applySubmitFunction(genstates) {
 			var theFormDrivenOutputVarsArray = [];
 			var a=0;
 
-			console.log(data[0]);
-
 			var tableHeaders = Object.keys(data[0]).slice(1);
 
 			$('input[name=practicetable]:checked').each(function() {
@@ -156,18 +81,13 @@ function applySubmitFunction(genstates) {
 					var thisEfficacy = $(this).val();
 					$('input[name=adoptiontable]:checked').each(function() {
 						var thisYear = 'y' + $(this).val();
-						console.log( $(this).val() );
 						var theFormDrivenOutputVarName = $('select[name=region]').val() + thisPractice + thisEfficacy + thisYear;
 						var thisIndex;
-						console.log(theFormDrivenOutputVarName); 
 						for (var i in data) {
 							if (data[i]['index']==theFormDrivenOutputVarName)
 								thisIndex = i;							
 						}
 						theFormDrivenOutputVarsArray[a] = $.map(data[thisIndex], function(val, key) { return val; }).slice(1);
-						/*for (var i in data[thisIndex]) {
-							theFormDrivenOutputVarsArray[a][i] = data[thisIndex][i][1];
-						}*/
 						a++;
 					});
 				});
