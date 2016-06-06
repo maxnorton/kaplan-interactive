@@ -156,11 +156,11 @@ function applySubmitFunction(genstates) {
 					var thisEfficacy = $(this).val();
 					$('input[name=adoptiontable]:checked').each(function() {
 						var thisYear = 'y' + $(this).val();
+						console.log( $(this).val() );
 						var theFormDrivenOutputVarName = $('select[name=region]').val() + thisPractice + thisEfficacy + thisYear;
 						var thisIndex;
 						console.log(theFormDrivenOutputVarName); 
 						for (var i in data) {
-							console.log(data[i]['index']);
 							if (data[i]['index']==theFormDrivenOutputVarName)
 								thisIndex = i;							
 						}
@@ -168,7 +168,6 @@ function applySubmitFunction(genstates) {
 						/*for (var i in data[thisIndex]) {
 							theFormDrivenOutputVarsArray[a][i] = data[thisIndex][i][1];
 						}*/
-						console.log(theFormDrivenOutputVarsArray[a]);
 						a++;
 					});
 				});

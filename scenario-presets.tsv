@@ -37,13 +37,13 @@ nsjDP75y5	Northern San Joaquin	Delayed Pruning	75.0	5.0	$40,988	25	5.0	0.0
 nsjDP75y10	Northern San Joaquin	Delayed Pruning	75.0	10.0	$24,990	22	10.0	0.0
 nsjDBP25y3	Northern San Joaquin	Double Pruning	25.0	3.0	$8,761	15	11	0.326
 nsjDBP25y5	Northern San Joaquin	Double Pruning	25.0	5.0	$6,795	14	11	0.355
-nsjDBP25y1	Northern San Joaquin	Double Pruning	25.0	10.0	$1,866	13	12	0.585
+nsjDBP25y10	Northern San Joaquin	Double Pruning	25.0	10.0	$1,866	13	12	0.585
 nsjDBP50y3	Northern San Joaquin	Double Pruning	50.0	3.0	$27,660	22	10	0.133
 nsjDBP50y5	Northern San Joaquin	Double Pruning	50.0	5.0	$23,221	20	10	0.139
-nsjDBP50y1	Northern San Joaquin	Double Pruning	50.0	10.0	$9,665	15	11	0.214
+nsjDBP50y10	Northern San Joaquin	Double Pruning	50.0	10.0	$9,665	15	11	0.214
 nsjDBP75y3	Northern San Joaquin	Double Pruning	75.0	3.0	$38,957	25	10	0.098
 nsjDBP75y5	Northern San Joaquin	Double Pruning	75.0	5.0	$37,249	25	10	0.091
-nsjDBP75y1	Northern San Joaquin	Double Pruning	75.0	10.0	$22,362	21	10	0.105
+nsjDBP75y10	Northern San Joaquin	Double Pruning	75.0	10.0	$22,362	21	10	0.105
 nsjHP25y3	Northern San Joaquin	Hand painted Topsin	25.0	3.0	$11,621	15	9	0.106
 nsjHP25y5	Northern San Joaquin	Hand painted Topsin	25.0	5.0	$9,322	15	9	0.115
 nsjHP25y10	Northern San Joaquin	Hand painted Topsin	25.0	10.0	$3,642	13	10	0.19
@@ -64,13 +64,13 @@ ccDP75y5	Central Coast	Delayed Pruning	75.0	5.0	$59,721	25	5.0	0.0
 ccDP75y10	Central Coast	Delayed Pruning	75.0	10.0	$36,412	24	10.0	0.0
 ccDBP25y3	Central Coast	Double Pruning	25.0	3.0	$13,143	16	11	0.306
 ccDBP25y5	Central Coast	Double Pruning	25.0	5.0	$10,236	15	11	0.333
-ccDBP25y1	Central Coast	Double Pruning	25.0	10.0	$2,954	13	12	0.549
+ccDBP25y10	Central Coast	Double Pruning	25.0	10.0	$2,954	13	12	0.549
 ccDBP50y3	Central Coast	Double Pruning	50.0	3.0	$40,679	23	10	0.125
 ccDBP50y5	Central Coast	Double Pruning	50.0	5.0	$34,169	21	10	0.13
-ccDBP50y1	Central Coast	Double Pruning	50.0	10.0	$14,318	16	11	0.201
+ccDBP50y10	Central Coast	Double Pruning	50.0	10.0	$14,318	16	11	0.201
 ccDBP75y3	Central Coast	Double Pruning	75.0	3.0	$57,137	25	10	0.092
 ccDBP75y5	Central Coast	Double Pruning	75.0	5.0	$54,608	25	9	0.086
-ccDBP75y1	Central Coast	Double Pruning	75.0	10.0	$32,818	23	10	0.099
+ccDBP75y10	Central Coast	Double Pruning	75.0	10.0	$32,818	23	10	0.099
 ccHP25y3	Central Coast	Hand painted Topsin	25.0	3.0	$16,401	16	9	0.134
 ccHP25y5	Central Coast	Hand painted Topsin	25.0	5.0	$13,116	15	9	0.146
 ccHP25y10	Central Coast	Hand painted Topsin	25.0	10.0	$4,978	13	10	0.24
@@ -91,13 +91,13 @@ lakeDP75y5	Lake	Delayed Pruning	75.0	5.0	$40,988	25	5.0	0.0
 lakeDP75y10	Lake	Delayed Pruning	75.0	10.0	$24,990	25	10.0	0.0
 lakeDBP25y3	Lake	Double Pruning	25.0	3.0	$8,761	16	10	0.234
 lakeDBP25y5	Lake	Double Pruning	25.0	5.0	$6,795	16	10	0.255
-lakeDBP25y1	Lake	Double Pruning	25.0	10.0	$1,866	14	11	0.421
+lakeDBP25y10	Lake	Double Pruning	25.0	10.0	$1,866	14	11	0.421
 lakeDBP50y3	Lake	Double Pruning	50.0	3.0	$27,660	24	10	0.095
 lakeDBP50y5	Lake	Double Pruning	50.0	5.0	$23,221	22	9	0.1
-lakeDBP50y1	Lake	Double Pruning	50.0	10.0	$9,665	17	10	0.154
+lakeDBP50y10	Lake	Double Pruning	50.0	10.0	$9,665	17	10	0.154
 lakeDBP75y3	Lake	Double Pruning	75.0	3.0	$38,957	25	9	0.071
 lakeDBP75y5	Lake	Double Pruning	75.0	5.0	$37,249	25	9	0.066
-lakeDBP75y1	Lake	Double Pruning	75.0	10.0	$22,362	25	10	0.076
+lakeDBP75y10	Lake	Double Pruning	75.0	10.0	$22,362	25	10	0.076
 lakeHP25y3	Lake	Hand painted Topsin	25.0	3.0	$11,621	17	7	0.047
 lakeHP25y5	Lake	Hand painted Topsin	25.0	5.0	$9,322	16	7	0.051
 lakeHP25y10	Lake	Hand painted Topsin	25.0	10.0	$3,642	14	10	0.084
@@ -118,13 +118,13 @@ sonomaDP75y5	Sonoma	Delayed Pruning	75.0	5.0	$74,265	25	5.0	0.0
 sonomaDP75y10	Sonoma	Delayed Pruning	75.0	10.0	$45,280	23	10.0	0.0
 sonomaDBP25y3	Sonoma	Double Pruning	25.0	3.0	$18,347	15	10	0.221
 sonomaDBP25y5	Sonoma	Double Pruning	25.0	5.0	$14,499	15	10	0.24
-sonomaDBP25y1	Sonoma	Double Pruning	25.0	10.0	$4,917	13	11	0.396
+sonomaDBP25y10	Sonoma	Double Pruning	25.0	10.0	$4,917	13	11	0.396
 sonomaDBP50y3	Sonoma	Double Pruning	50.0	3.0	$52,588	22	9	0.09
 sonomaDBP50y5	Sonoma	Double Pruning	50.0	5.0	$44,260	20	9	0.094
-sonomaDBP50y1	Sonoma	Double Pruning	50.0	10.0	$19,049	15	10	0.145
+sonomaDBP50y10	Sonoma	Double Pruning	50.0	10.0	$19,049	15	10	0.145
 sonomaDBP75y3	Sonoma	Double Pruning	75.0	3.0	$73,056	25	9	0.066
 sonomaDBP75y5	Sonoma	Double Pruning	75.0	5.0	$69,677	25	9	0.062
-sonomaDBP75y1	Sonoma	Double Pruning	75.0	10.0	$42,055	22	10	0.071
+sonomaDBP75y10	Sonoma	Double Pruning	75.0	10.0	$42,055	22	10	0.071
 sonomaHP25y3	Sonoma	Hand painted Topsin	25.0	3.0	$22,388	15	7	0.049
 sonomaHP25y5	Sonoma	Hand painted Topsin	25.0	5.0	$18,070	15	7	0.053
 sonomaHP25y10	Sonoma	Hand painted Topsin	25.0	10.0	$7,427	13	10	0.088
