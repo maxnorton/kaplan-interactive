@@ -53,13 +53,13 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 			'healthy' : 'Healthy, untreated',
 			'untreated' : 'Infected, untreated',
 			'25y3' : '25% DCE treatment adopted year 3',
-			'50y3' : '50% DCE treatment adopted year 3',
-			'75y3' : '75% DCE treatment adopted year 3',
 			'25y5' : '25% DCE treatment adopted year 5',
-			'50y5' : '50% DCE treatment adopted year 5',
-			'75y5' : '75% DCE treatment adopted year 5',
 			'25y10' : '25% DCE treatment adopted year 10',
+			'50y3' : '50% DCE treatment adopted year 3',
+			'50y5' : '50% DCE treatment adopted year 5',
 			'50y10' : '50% DCE treatment adopted year 10',
+			'75y3' : '75% DCE treatment adopted year 3',
+			'75y5' : '75% DCE treatment adopted year 5',
 			'75y10' : '75% DCE treatment adopted year 10'
 		};
 
@@ -152,7 +152,6 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  		for (var i=1; i<healthyYields.length; i++) {
  			var compoundDiscount = Math.pow(discountFactor, i);
  			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[parseInt(i-1)];
- 			console.log(healthyCDNRna[i]);
  			if (healthyCDNRna[i] > healthyCDNRna[parseInt(i-1)]) {
  				healthyACDNBnaDisplay = healthyCDNRna[i];
  				healthyLPY = i;
