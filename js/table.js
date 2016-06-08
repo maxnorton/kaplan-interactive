@@ -134,17 +134,23 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 		for (var i in untreatedYields) {
 			untreatedNR[i] = price*untreatedYields[i]-costs[i];
 		};	
+		console.log('untreatedNR:');
+		console.log(untreatedNR);
 
 		var untreatedDNR = [];
 		for (var i in untreatedNR) {
 			var compoundDiscount = Math.pow(discountFactor, i);
 			untreatedDNR[i] = untreatedNR[i]*compoundDiscount;
 		};	
+		console.log('untreatedDNR:');
+		console.log(untreatedDNR);
 
 		var untreatedCDNR = [ untreatedDNR[0] ];
 		for (var i=1; i<untreatedDNR.length; i++) {
 			untreatedCDNR[i] = untreatedDNR[i] + untreatedCDNR[i-1];
 		};
+		console.log('untreatedCDNR:');
+		console.log(untreatedCDNR);
 
  		var healthyCDNRna = [ price*healthyYields[0] - costs[0] ];
  		var healthyACDNBnaDisplay;
