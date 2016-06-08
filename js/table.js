@@ -187,15 +187,16 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  		};
 
  		var untreatedLPY = 0;
-		while (untreatedCDNR[untreatedLPY] < 0 && untreatedLPY < 25) {
+		while (untreatedDNR[untreatedLPY] < 0 && untreatedLPY < 25) {
  			untreatedLPY++;
  		}
  		if (untreatedLPY==25) {
  			untreatedLPY = 'Untreated vineyard never profitable';
  		} else {
-	 		while (untreatedCDNR[untreatedLPY] > 0 && untreatedLPY < 25) {
+	 		while (untreatedDNR[untreatedLPY] > 0 && untreatedLPY < 25) {
 	 			untreatedLPY++;
 	 		}
+	 		untreatedLPY = untreatedLPY - 1;
 	 	}
 
  		var the_table_html = '<hr /><h2>Results</h2><table><thead><th><h4>Scenario</h4></th><th><h4>ACDNB</h4></th><th><h4>Breakeven age</h4></th><th><h4>Last profitable year</h4></th><th><h4>Breakeven probability</h4></th></thead><tbody>';
