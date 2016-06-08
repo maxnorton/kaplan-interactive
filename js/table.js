@@ -152,7 +152,6 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
  		for (var i=1; i<healthyYields.length; i++) {
  			var compoundDiscount = Math.pow(discountFactor, i);
  			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[parseInt(i-1)];
- 			console.log(healthyCDNRna[i]);
  			if (healthyCDNRna[i] > healthyCDNRna[parseInt(i-1)]) {
  				healthyACDNBnaDisplay = healthyCDNRna[i];
  				healthyLPY = i;
@@ -332,7 +331,7 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 		$('body,html').stop(true,true).animate({scrollTop: $('#results').offset().top - $('header').height()}, '500', 'swing');
 
 	});
-
+}
 
 function the_table_and_figure(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yield1, yield2, yield3, yield4) {
 	d3.tsv("yield-rates.tsv", function(data) {
@@ -399,32 +398,32 @@ function the_table_and_figure(discount, cost0, cost1, cost2, cost3, pc, price, y
 		var discountFactor = 1/(1+discount/100);
 
 		healthyYields = [
-			yield0,
-			yield1,
-			yield2,
-			yield3,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,
-			yield4,		
-			yield4		
+			parseInt(yield0),
+			parseInt(yield1),
+			parseInt(yield2),
+			parseInt(yield3),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),
+			parseInt(yield4),		
+			parseInt(yield4)		
 		];
 
 		untreatedYields = [];
@@ -483,7 +482,6 @@ function the_table_and_figure(discount, cost0, cost1, cost2, cost3, pc, price, y
  		for (var i=1; i<healthyYields.length; i++) {
  			var compoundDiscount = Math.pow(discountFactor, i);
  			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[parseInt(i-1)];
- 			console.log(healthyCDNRna[i]);
  			if (healthyCDNRna[i] > healthyCDNRna[parseInt(i-1)]) {
  				healthyACDNBnaDisplay = healthyCDNRna[i];
  				healthyLPY = i;
@@ -659,7 +657,12 @@ function the_table_and_figure(discount, cost0, cost1, cost2, cost3, pc, price, y
 
 		the_table_html += '</tbody></table>' + '<p class="print-link"><a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print these results.</a></p><p class="adjust-link"><a href="#form" onclick="$(\'body,html\').stop(true,true).animate({scrollTop: $(\'#form\').offset().top - $(\'header\').height()}, \'500\', \'swing\');">Adjust parameters</a></p>';
 
+		$('.results').html(the_table_html);
 
+
+	var years = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+	console.log(years);
+	console.log(healthyYields);
 
 	var margin = {top: 20, right: 20, bottom: 30, left: 50},
 	    width = 960 - margin.left - margin.right,
@@ -682,17 +685,19 @@ function the_table_and_figure(discount, cost0, cost1, cost2, cost3, pc, price, y
 	    .orient("left");
 
 	var line = d3.svg.line()
-	    .x(function(d) { return x(d.date); })
-	    .y(function(d) { return y(d.close); });
+	    .x(years)
+	    .y(healthyYields);
 
-	var svg = d3.select("body").append("svg")
+	console.log(line);
+
+	var svg = d3.select(".results").append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 	  .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	  x.domain(d3.extent(data, function(d) { return d.age; }));
-	  y.domain(d3.extent(data, function(d) { return d.close; }));
+	  x.domain(d3.extent(years));
+	  y.domain(d3.extent(healthyYields));
 
 	  svg.append("g")
 	      .attr("class", "x axis")
@@ -707,7 +712,7 @@ function the_table_and_figure(discount, cost0, cost1, cost2, cost3, pc, price, y
 	      .attr("y", 6)
 	      .attr("dy", ".71em")
 	      .style("text-anchor", "end")
-	      .text("Price ($)");
+	      .text("Yield (Tons/Acre)");
 
 	  svg.append("path")
 	      .datum(data)
@@ -715,15 +720,12 @@ function the_table_and_figure(discount, cost0, cost1, cost2, cost3, pc, price, y
 	      .attr("d", line);
 	});
 
-	$('.results').html(the_table_html);
-
 	$('body,html').stop(true,true).animate({scrollTop: $('#results').offset().top - $('header').height()}, '500', 'swing');
 
 }
 
-	function type(d) {
-	  d.date = formatDate.parse(d.date);
-	  d.close = +d.close;
+function type(d) {
+	  d.years = +d.years;
+	  d.healthyYields = +d.healthyYields;
 	  return d;
 	}
-};
