@@ -153,16 +153,15 @@ function the_table(discount, cost0, cost1, cost2, cost3, pc, price, yield0, yiel
 		console.log(untreatedCDNR);
 
  		var healthyCDNRna = [ price*healthyYields[0] - costs[0] ];
- 		var healthyACDNBnaDisplay;
  		var healthyLPY = '-';
  		for (var i=1; i<healthyYields.length; i++) {
  			var compoundDiscount = Math.pow(discountFactor, i);
  			healthyCDNRna[i] = (price*healthyYields[i] - costs[i])*compoundDiscount + healthyCDNRna[parseInt(i-1)];
  			if (healthyCDNRna[i] > healthyCDNRna[parseInt(i-1)]) {
- 				healthyACDNBnaDisplay = healthyCDNRna[i];
  				healthyLPY = i;
  			}
  		};
+ 		var healthyACDNBnaDisplay = healthyCDNRna[25] - untreatedCDNR[25];
  		if (healthyACDNBnaDisplay < 0) {
  			healthyACDNBnaDisplay = '-$' + parseFloat(-1*healthyACDNBnaDisplay).toFixed(2);
  		} else {
