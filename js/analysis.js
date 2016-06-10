@@ -134,7 +134,15 @@ function applySubmitFunction(genstates) {
 				for (var row=0; row<tablerows.length; row++) {
 					table += tablerows[row];
 				}
-				table += '</table></section>';
+				table += '</table>';
+
+				/*console.log(document.getElementById('acdnb').checked);
+
+				if (document.getElementById('acdnb').checked == true) {
+					table += '<p class="table-footnote"><strong>Additional cumulative discounted net benefits (ACDNB):</strong> The difference in cumulative net returns (returns - costs) per acre over 25 years between an infected vineyard where action is taken and an untreated infected vineyard. Current and future dollar amounts are in 2013 dollars and are discounted to 2013 using a 3% discount rate.</p>';
+				}*/
+
+				table += '</section>';
 			} else {
 				table = '<p class="alert">The <em>Generate table</em> option is selected, but insufficient parameters were selected to produce an output table. To generate a table, please return to the <a href="#" onclick="$(\'body,html\').stop(true,true).animate({scrollTop: $(\'#tableparameters\').offset().top - $(\'header\').height()}, \'500\', \'swing\'); return false;">table parameters form</a> and select at least one management practice, efficacy level, year of adoption, and output parameter.</p>';
 			};
