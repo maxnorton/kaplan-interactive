@@ -40,7 +40,7 @@ As a reference point, here are the last years an untreated infected vineyard gen
 
 **Age adoption pays off:** The age when cumulative discounted net returns (returns – costs) for a treated infected vineyard exceed those from an untreated infected vineyard.  
 
-**Breakeven probability:**  The probability of infection where expected cumulative discounted net returns from treating a vineyard equals the expected cumulative discounted net returns from not treating a vineyard. If you perceive a probability of infection less than this probability, then not treating the vineyard generates greater cumulative discounted net returns than a treated vineyard, and vice versa.  
+**Infection probability threshold:**  The probability of infection where expected cumulative discounted net returns from treating a vineyard equals the expected cumulative discounted net returns from not treating a vineyard. If you perceive a probability of infection less than this probability, then not treating the vineyard generates greater cumulative discounted net returns than a treated vineyard, and vice versa.  
 
 As a reference point here are the cumulative discounted net returns for a treated healthy vineyard.  
 
