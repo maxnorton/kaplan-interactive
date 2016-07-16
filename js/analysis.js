@@ -7,18 +7,18 @@ function applySubmitFunction(genstates) {
 		/***** Generate figure(s)
 		------------------------------------ */
 		var fullfig = '';
-		var efficacyOrYearlength;
-		efficacyOrYearchoice = $('input[name=efficacyOrYearfig]').val() + 'fig';
+		var efficacyOrYearlength = 0;
+		efficacyOrYearchoice = $('input[name=efficacyOrYearfig]:checked').val() + 'fig';
 		switch (efficacyOrYearchoice) {
 			case 'efficacyfig':
 				efficacyOrYearlength=$('input[name=efficacyfig]:checked').length;
 				break;
-			default:
+			case 'yearfig':
 				efficacyOrYearlength=$('input[name=yearfig]:checked').length;
 				break;			
 		};
 
-		if (efficacyOrYearlength==0 || (efficacyOrYearchoice==0 && $('input[name=practicefig]:checked').length==0) ) {
+		if ( ( $('input[name=figuregen]:checked').length != 0 && efficacyOrYearlength==0 ) || ( $('input[name=figuregen]:checked').length != 0 && $('input[name=practicefig]:checked').length==0 && $('input[name=figuredisplay]:checked').val()=='netreturns') ) {
 			fullfig = '<p class="alert">The <em>Generate figure</em> option is selected, but insufficient parameters were selected to produce a figure. To generate a figure, please return to the <a href="#" onclick="$(\'body,html\').stop(true,true).animate({scrollTop: $(\'#figureparameters\').offset().top - $(\'header\').height()}, \'500\', \'swing\'); return false;">figure parameters form</a> and select an efficacy level or a year of adoption, and for a net returns figure, at least one management practice.</p>';
 
 		} else {
@@ -136,16 +136,14 @@ function applySubmitFunction(genstates) {
 				}
 				table += '</table>';
 
-				/*console.log(document.getElementById('acdnb').checked);
-
-				if (document.getElementById('acdnb').checked == true) {
-					table += '<p class="table-footnote"><strong>Additional cumulative discounted net benefits (ACDNB):</strong> The difference in cumulative net returns (returns - costs) per acre over 25 years between an infected vineyard where action is taken and an untreated infected vineyard. Current and future dollar amounts are in 2013 dollars and are discounted to 2013 using a 3% discount rate.</p>';
-				}*/
-
 				table += '</section>';
-			} else {
+			} else if ( $('input[name=tablegen]:checked').length != 0 ) {
 				table = '<p class="alert">The <em>Generate table</em> option is selected, but insufficient parameters were selected to produce an output table. To generate a table, please return to the <a href="#" onclick="$(\'body,html\').stop(true,true).animate({scrollTop: $(\'#tableparameters\').offset().top - $(\'header\').height()}, \'500\', \'swing\'); return false;">table parameters form</a> and select at least one management practice, efficacy level, year of adoption, and output parameter.</p>';
+			} else if ( $('input[name=tablegen]:checked').length == 0 ) {
+				table = '';
 			};
+			console.log(table);
+
 
 			/***** Generate assumptions table
 			------------------------------------ */
@@ -166,10 +164,11 @@ function applySubmitFunction(genstates) {
 			/***** Collate results
 			------------------------------------ */
 
+			console.log(results);
 			var results = '<hr /><h2>Results</h2><p class="landscape-alert" style="font-style: italic;">Tap or click figures to view full-screen. On mobile devices, we recommend viewing your results in landscape mode.</p><p class="print-link"><a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print these results.</a></p><p class="figure-wrap">';
 			if (genstates['figurestate'] == true)
 				results += fullfig;
-			if (genstates['tablestate'] == true)
+			if (genstates['tablestate'] == true && $('input[name=tablegen]:checked').length != 0)
 				results += table;
 			results += assumptionstable + '<p class="print-link"><a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print these results.</a></p><p class="adjust-link"><a href="#page" onclick="$(\'body,html\').stop(true,true).animate({scrollTop: $(\'#theform\').offset().top - $(\'header\').height()}, \'500\', \'swing\');">Adjust parameters</a></p>';
 			$('.results').html(results); // Write results to page
