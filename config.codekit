@@ -56,6 +56,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/custom-instructions-table01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23277,
+		"inputAbbreviatedPath": "\/img\/custom-instructions-table01.png",
+		"outputAbbreviatedPath": "\/img\/custom-instructions-table01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/efficacy-table01.png": {
 		"fileType": 32768,
 		"ignore": 0,
