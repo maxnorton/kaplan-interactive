@@ -1727,7 +1727,7 @@
 		},
 	"\/markdown\/compiled\/custom-instructions.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/markdown\/compiled\/custom-instructions.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -2629,7 +2629,7 @@
 	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleResolutionType": 0,
-	"typescriptModuleType": 0,
+	"typescriptModuleType": 2,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
